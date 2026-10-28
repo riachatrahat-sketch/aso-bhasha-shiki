@@ -3,6 +3,7 @@ name: CI
 on:
   push:
     branches: [main]
+    tags: ["v*"]
   pull_request:
   workflow_dispatch:
 
@@ -92,3 +93,29 @@ jobs:
       - run: npm install
       - run: npm run build
       - run: npm test
+
+  release:
+    name: Publish pre-release (tags only)
+    if: startsWith(github.ref, 'refs/tags/v')
+    needs: android-apk
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/download-artifact@v4
+        with:
+          name: aso-bhasha-shiki-debug-apk
+
+      - name: Create pre-release with the APK
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          cat > notes.md <<'NOTES'
+          Early test version of Aso Bhasha Shiki, a free English and Japanese learning app for Bengali speakers.
+          336 lessons, 3,024 practice questions (English Beginner to Advanced; Japanese Hiragana, Katakana, N5, N4).
+
+          Install: download app-debug.apk on your Android phone. If asked, allow "Install unknown apps" for your browser or file manager.
+
+          Note: after signing up, check your spam folder for the verification email. The file is large (debug build), so Wi-Fi is better.
+          NOTES
+          gh release create "$GITHUB_REF_NAME" app-debug.apk --repo "$GITHUB_REPOSITORY" --prerelease --title "Aso Bhasha Shiki $GITHUB_REF_NAME (early test)" --notes-file notes.md
