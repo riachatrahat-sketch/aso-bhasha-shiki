@@ -1,0 +1,41 @@
+# Flutter / Dart
+.dart_tool/
+.packages
+.pub-cache/
+.pub/
+build/
+*.iml
+.idea/
+.vscode/
+.flutter-plugins
+.flutter-plugins-dependencies
+pubspec.lock
+
+# Secrets: NEVER commit these
+.env
+*.env
+**/google-services.json
+**/GoogleService-Info.plist
+android/key.properties
+*.jks
+*.keystore
+
+# Firebase
+# lib/firebase_options.dart is committed on purpose: it holds public project
+# identifiers (not secrets). It is a placeholder until you run `flutterfire configure`.
+.firebase/
+firebase-debug.log
+functions/node_modules/
+functions/.env*
+
+# OS
+.DS_Store
+
+# Cloud Functions build output and test build
+functions/lib/
+functions/.test-build/
+functions/node_modules/
+
+# Service-account keys: NEVER commit
+*service-account*.json
+*serviceAccount*.json

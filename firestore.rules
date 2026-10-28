@@ -1,0 +1,111 @@
+rules_version = '2';
+
+// LingoBridge AI security rules.
+//
+// Principle: the app (client) may read its OWN data and edit its OWN profile
+// fields. Everything that affects the score (lessonProgress, stats,
+// scoreTransactions, dailyStreaks, mistakes) is written ONLY by the
+// `submitAttempt` Cloud Function using the Admin SDK, which bypasses these
+// rules. So a modified app cannot award itself points.
+//
+// These rules have not been run against the Firebase emulator in this
+// repository. Test them with the emulator before going live (see README).
+service cloud.firestore {
+  match /databases/{database}/documents {
+
+    function signedIn() {
+      return request.auth != null;
+    }
+
+    function isOwner(uid) {
+      return signedIn() && request.auth.uid == uid;
+    }
+
+    function validName(v) {
+      return v is string && v.size() >= 2 && v.size() <= 60;
+    }
+
+    function validPhone(v) {
+      return v is string && v.matches('^\\+?[0-9]{7,15}$');
+    }
+
+    function validGender(v) {
+      return v in ['Male', 'Female', 'Prefer not to say'];
+    }
+
+    function validLanguage(v) {
+      return v in ['en', 'ja'];
+    }
+
+    function validGoal(v) {
+      return v is int && v >= 1 && v <= 50;
+    }
+
+    // Lesson content: readable by signed-in users, written only by the seed script (Admin SDK).
+    match /lessons/{lessonId} {
+      allow read: if signedIn();
+      allow write: if false;
+    }
+
+    // Scoring configuration: server only.
+    match /config/{docId} {
+      allow read, write: if false;
+    }
+
+    match /users/{uid} {
+      allow read: if isOwner(uid);
+
+      // Profile created at sign-up. Only these fields, no score data.
+      allow create: if isOwner(uid)
+        && request.resource.data.keys().hasOnly([
+             'fullName', 'email', 'phone', 'gender',
+             'preferredLanguage', 'dailyGoal', 'acceptedTermsAt', 'createdAt'])
+        && request.resource.data.keys().hasAll([
+             'fullName', 'email', 'phone', 'gender',
+             'preferredLanguage', 'dailyGoal', 'acceptedTermsAt', 'createdAt'])
+        && validName(request.resource.data.fullName)
+        && request.resource.data.email == request.auth.token.email.lower()
+        && validPhone(request.resource.data.phone)
+        && validGender(request.resource.data.gender)
+        && validLanguage(request.resource.data.preferredLanguage)
+        && validGoal(request.resource.data.dailyGoal)
+        && request.resource.data.createdAt == request.time
+        && request.resource.data.acceptedTermsAt == request.time;
+
+      // Editable profile and settings fields only.
+      allow update: if isOwner(uid)
+        && request.resource.data.diff(resource.data).affectedKeys()
+             .hasOnly(['fullName', 'phone', 'gender', 'preferredLanguage', 'dailyGoal'])
+        && validName(request.resource.data.fullName)
+        && validPhone(request.resource.data.phone)
+        && validGender(request.resource.data.gender)
+        && validLanguage(request.resource.data.preferredLanguage)
+        && validGoal(request.resource.data.dailyGoal);
+
+      // Deleting the profile is done by the deleteAccountData function.
+      allow delete: if false;
+
+      // Server-written, owner-readable data.
+      match /lessonProgress/{lessonId} {
+        allow read: if isOwner(uid);
+        allow write: if false;
+      }
+      match /stats/{docId} {
+        allow read: if isOwner(uid);
+        allow write: if false;
+      }
+      match /scoreTransactions/{txId} {
+        allow read: if isOwner(uid);
+        allow write: if false;
+      }
+      match /dailyStreaks/{day} {
+        allow read: if isOwner(uid);
+        allow write: if false;
+      }
+      match /mistakes/{mistakeId} {
+        allow read: if isOwner(uid);
+        allow write: if false;
+      }
+    }
+  }
+}

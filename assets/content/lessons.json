@@ -1,0 +1,161 @@
+{
+  "languages": [
+    {
+      "id": "en",
+      "name": "English",
+      "flag": "🇬🇧",
+      "ttsLocale": "en-US",
+      "sttLocale": "en_US",
+      "levels": [
+        {"id": "beginner", "name": "Beginner"},
+        {"id": "elementary", "name": "Elementary"},
+        {"id": "intermediate", "name": "Intermediate"},
+        {"id": "advanced", "name": "Advanced"}
+      ]
+    },
+    {
+      "id": "ja",
+      "name": "Japanese",
+      "flag": "🇯🇵",
+      "ttsLocale": "ja-JP",
+      "sttLocale": "ja_JP",
+      "levels": [
+        {"id": "hiragana", "name": "Hiragana"},
+        {"id": "katakana", "name": "Katakana"},
+        {"id": "n5", "name": "JLPT N5"},
+        {"id": "n4", "name": "JLPT N4"},
+        {"id": "n3", "name": "JLPT N3"},
+        {"id": "n2", "name": "JLPT N2"},
+        {"id": "n1", "name": "JLPT N1"}
+      ]
+    }
+  ],
+  "lessons": [
+    {
+      "id": "en_beginner_01", "language": "en", "level": "beginner", "order": 1,
+      "title": "Greetings", "difficulty": 1,
+      "items": [
+        {"target": "Hello", "meaningBn": "হ্যালো (অভিবাদন)", "meaningEn": "A common greeting", "example": "Hello, how are you?"},
+        {"target": "Good morning", "meaningBn": "শুভ সকাল", "meaningEn": "A greeting used in the morning", "example": "Good morning, teacher."},
+        {"target": "Thank you", "meaningBn": "ধন্যবাদ", "meaningEn": "Used to show thanks", "example": "Thank you for your help."}
+      ]
+    },
+    {
+      "id": "en_beginner_02", "language": "en", "level": "beginner", "order": 2,
+      "title": "Introductions", "difficulty": 1,
+      "items": [
+        {"target": "My name is Sara", "meaningBn": "আমার নাম সারা", "meaningEn": "Tell someone your name", "example": "My name is Sara and I live in Dhaka."},
+        {"target": "Nice to meet you", "meaningBn": "আপনার সঙ্গে দেখা হয়ে ভালো লাগলো", "meaningEn": "Said when you meet someone for the first time", "example": "Nice to meet you, Tom."},
+        {"target": "How are you?", "meaningBn": "আপনি কেমন আছেন?", "meaningEn": "Ask about someone's wellbeing", "example": "Hi Sara, how are you?"}
+      ]
+    },
+    {
+      "id": "en_beginner_03", "language": "en", "level": "beginner", "order": 3,
+      "title": "Everyday Words", "difficulty": 1,
+      "items": [
+        {"target": "water", "meaningBn": "পানি", "meaningEn": "A clear liquid we drink", "example": "I drink water every day."},
+        {"target": "book", "meaningBn": "বই", "meaningEn": "Pages with writing that you read", "example": "This book is interesting."},
+        {"target": "friend", "meaningBn": "বন্ধু", "meaningEn": "A person you like and trust", "example": "He is my best friend."}
+      ]
+    },
+    {
+      "id": "en_beginner_04", "language": "en", "level": "beginner", "order": 4,
+      "title": "Simple Sentences", "difficulty": 2,
+      "items": [
+        {"target": "I am a student", "meaningBn": "আমি একজন শিক্ষার্থী", "meaningEn": "Say what you do", "example": "I am a student at a school in Dhaka."},
+        {"target": "I like tea", "meaningBn": "আমি চা পছন্দ করি", "meaningEn": "Say what you enjoy", "example": "I like tea with milk."},
+        {"target": "Where is the bus stop?", "meaningBn": "বাস স্টপটা কোথায়?", "meaningEn": "Ask for directions", "example": "Excuse me, where is the bus stop?"}
+      ]
+    },
+    {
+      "id": "en_elementary_01", "language": "en", "level": "elementary", "order": 1,
+      "title": "At the Shop", "difficulty": 2,
+      "items": [
+        {"target": "How much is this?", "meaningBn": "এটার দাম কত?", "meaningEn": "Ask the price of something", "example": "How much is this shirt?"},
+        {"target": "I would like some rice", "meaningBn": "আমি একটু ভাত চাই", "meaningEn": "A polite way to ask for food", "example": "I would like some rice and fish, please."},
+        {"target": "Can you help me?", "meaningBn": "আপনি কি আমাকে সাহায্য করতে পারেন?", "meaningEn": "Ask someone for help", "example": "Excuse me, can you help me?"}
+      ]
+    },
+    {
+      "id": "en_elementary_02", "language": "en", "level": "elementary", "order": 2,
+      "title": "Daily Routine", "difficulty": 2,
+      "items": [
+        {"target": "I wake up at six", "meaningBn": "আমি ছয়টায় ঘুম থেকে উঠি", "meaningEn": "Describe your morning", "example": "I wake up at six and drink water."},
+        {"target": "She goes to school every day", "meaningBn": "সে প্রতিদিন স্কুলে যায়", "meaningEn": "Describe a daily habit", "example": "She goes to school every day by bus."},
+        {"target": "We are eating lunch", "meaningBn": "আমরা দুপুরের খাবার খাচ্ছি", "meaningEn": "Say what is happening now", "example": "We are eating lunch at home."}
+      ]
+    },
+    {
+      "id": "ja_hiragana_01", "language": "ja", "level": "hiragana", "order": 1,
+      "title": "Vowel Words", "difficulty": 1,
+      "items": [
+        {"target": "あい", "reading": "ai", "meaningBn": "ভালোবাসা", "meaningEn": "love", "example": "あいはたいせつです。 (Love is important.)", "alternatives": ["愛"]},
+        {"target": "いえ", "reading": "ie", "meaningBn": "বাড়ি", "meaningEn": "house", "example": "ここはわたしのいえです。 (This is my house.)", "alternatives": ["家"]},
+        {"target": "うみ", "reading": "umi", "meaningBn": "সমুদ্র", "meaningEn": "sea", "example": "うみはひろいです。 (The sea is wide.)", "alternatives": ["海"]}
+      ]
+    },
+    {
+      "id": "ja_hiragana_02", "language": "ja", "level": "hiragana", "order": 2,
+      "title": "K-row Words", "difficulty": 1,
+      "items": [
+        {"target": "かさ", "reading": "kasa", "meaningBn": "ছাতা", "meaningEn": "umbrella", "example": "かさをかいます。 (I buy an umbrella.)", "alternatives": ["傘"]},
+        {"target": "くつ", "reading": "kutsu", "meaningBn": "জুতা", "meaningEn": "shoes", "example": "くつをはきます。 (I put on shoes.)", "alternatives": ["靴"]},
+        {"target": "かお", "reading": "kao", "meaningBn": "মুখ, চেহারা", "meaningEn": "face", "example": "かおをあらいます。 (I wash my face.)", "alternatives": ["顔"]}
+      ]
+    },
+    {
+      "id": "ja_hiragana_03", "language": "ja", "level": "hiragana", "order": 3,
+      "title": "S and T Words", "difficulty": 2,
+      "items": [
+        {"target": "さかな", "reading": "sakana", "meaningBn": "মাছ", "meaningEn": "fish", "example": "さかながすきです。 (I like fish.)", "alternatives": ["魚"]},
+        {"target": "すし", "reading": "sushi", "meaningBn": "সুশি", "meaningEn": "sushi", "example": "すしをたべます。 (I eat sushi.)", "alternatives": ["寿司"]},
+        {"target": "たまご", "reading": "tamago", "meaningBn": "ডিম", "meaningEn": "egg", "example": "たまごをたべます。 (I eat an egg.)", "alternatives": ["卵"]}
+      ]
+    },
+    {
+      "id": "ja_katakana_01", "language": "ja", "level": "katakana", "order": 1,
+      "title": "Everyday Loanwords", "difficulty": 1,
+      "items": [
+        {"target": "コーヒー", "reading": "koohii", "meaningBn": "কফি", "meaningEn": "coffee", "example": "コーヒーをのみます。 (I drink coffee.)", "alternatives": []},
+        {"target": "テレビ", "reading": "terebi", "meaningBn": "টেলিভিশন", "meaningEn": "television", "example": "テレビをみます。 (I watch TV.)", "alternatives": []},
+        {"target": "パン", "reading": "pan", "meaningBn": "পাউরুটি", "meaningEn": "bread", "example": "パンをたべます。 (I eat bread.)", "alternatives": []}
+      ]
+    },
+    {
+      "id": "ja_katakana_02", "language": "ja", "level": "katakana", "order": 2,
+      "title": "Places and Things", "difficulty": 2,
+      "items": [
+        {"target": "ホテル", "reading": "hoteru", "meaningBn": "হোটেল", "meaningEn": "hotel", "example": "ホテルはどこですか。 (Where is the hotel?)", "alternatives": []},
+        {"target": "ケーキ", "reading": "keeki", "meaningBn": "কেক", "meaningEn": "cake", "example": "ケーキがすきです。 (I like cake.)", "alternatives": []},
+        {"target": "バス", "reading": "basu", "meaningBn": "বাস", "meaningEn": "bus", "example": "バスにのります。 (I ride the bus.)", "alternatives": []}
+      ]
+    },
+    {
+      "id": "ja_n5_01", "language": "ja", "level": "n5", "order": 1,
+      "title": "Greetings", "difficulty": 1,
+      "items": [
+        {"target": "おはようございます", "reading": "ohayou gozaimasu", "meaningBn": "শুভ সকাল", "meaningEn": "Good morning (polite)", "example": "せんせい、おはようございます。 (Good morning, teacher.)", "alternatives": []},
+        {"target": "ありがとうございます", "reading": "arigatou gozaimasu", "meaningBn": "ধন্যবাদ", "meaningEn": "Thank you (polite)", "example": "てつだってくれて、ありがとうございます。 (Thank you for helping me.)", "alternatives": []},
+        {"target": "すみません", "reading": "sumimasen", "meaningBn": "মাফ করবেন / দুঃখিত", "meaningEn": "Excuse me / I'm sorry", "example": "すみません、えきはどこですか。 (Excuse me, where is the station?)", "alternatives": ["済みません"]}
+      ]
+    },
+    {
+      "id": "ja_n5_02", "language": "ja", "level": "n5", "order": 2,
+      "title": "Introducing Yourself", "difficulty": 2,
+      "items": [
+        {"target": "はじめまして", "reading": "hajimemashite", "meaningBn": "প্রথম পরিচয়ে বলা হয়: আপনার সঙ্গে দেখা হয়ে ভালো লাগলো", "meaningEn": "Nice to meet you (first meeting)", "example": "はじめまして、サラです。 (Nice to meet you, I'm Sara.)", "alternatives": ["初めまして"]},
+        {"target": "わたしはがくせいです", "reading": "watashi wa gakusei desu", "meaningBn": "আমি একজন শিক্ষার্থী", "meaningEn": "I am a student", "example": "はい、わたしはがくせいです。 (Yes, I am a student.)", "alternatives": ["私は学生です"]},
+        {"target": "おなまえはなんですか", "reading": "onamae wa nan desu ka", "meaningBn": "আপনার নাম কী?", "meaningEn": "What is your name?", "example": "すみません、おなまえはなんですか。 (Excuse me, what is your name?)", "alternatives": ["お名前は何ですか"]}
+      ]
+    },
+    {
+      "id": "ja_n5_03", "language": "ja", "level": "n5", "order": 3,
+      "title": "Shopping", "difficulty": 2,
+      "items": [
+        {"target": "これはなんですか", "reading": "kore wa nan desu ka", "meaningBn": "এটা কী?", "meaningEn": "What is this?", "example": "これはなんですか。ペンですか。 (What is this? Is it a pen?)", "alternatives": ["これは何ですか"]},
+        {"target": "いくらですか", "reading": "ikura desu ka", "meaningBn": "কত দাম?", "meaningEn": "How much is it?", "example": "このりんごはいくらですか。 (How much is this apple?)", "alternatives": []},
+        {"target": "おいしいです", "reading": "oishii desu", "meaningBn": "এটা সুস্বাদু", "meaningEn": "It is delicious", "example": "このすしはおいしいです。 (This sushi is delicious.)", "alternatives": ["美味しいです"]}
+      ]
+    }
+  ]
+}
