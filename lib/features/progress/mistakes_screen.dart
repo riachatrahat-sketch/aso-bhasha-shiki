@@ -6,6 +6,7 @@ import '../../core/router/app_router.dart';
 import '../../core/theme/app_tokens.dart';
 import '../../core/widgets/app_card.dart';
 import '../../core/widgets/state_views.dart';
+  import '../../data/models/lesson.dart';
 import '../../providers/providers.dart';
 
 class MistakesScreen extends ConsumerWidget {
