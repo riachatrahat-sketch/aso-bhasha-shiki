@@ -6,6 +6,11 @@ on:
     tags: ["v*"]
   pull_request:
   workflow_dispatch:
+    inputs:
+      release_tag:
+        description: "Optional: publish a pre-release with this tag name (for example v0.2.0)"
+        required: false
+        default: ""
 
 jobs:
   flutter:
@@ -95,8 +100,8 @@ jobs:
       - run: npm test
 
   release:
-    name: Publish pre-release (tags only)
-    if: startsWith(github.ref, 'refs/tags/v')
+    name: Publish pre-release
+    if: startsWith(github.ref, 'refs/tags/v') || (github.event_name == 'workflow_dispatch' && inputs.release_tag != '')
     needs: android-apk
     runs-on: ubuntu-latest
     permissions:
@@ -109,6 +114,7 @@ jobs:
       - name: Create pre-release with the APK
         env:
           GH_TOKEN: ${{ github.token }}
+          TAG: ${{ inputs.release_tag || github.ref_name }}
         run: |
           cat > notes.md <<'NOTES'
           Early test version of Aso Bhasha Shiki, a free English and Japanese learning app for Bengali speakers.
@@ -118,4 +124,4 @@ jobs:
 
           Note: after signing up, check your spam folder for the verification email. The file is large (debug build), so Wi-Fi is better.
           NOTES
-          gh release create "$GITHUB_REF_NAME" app-debug.apk --repo "$GITHUB_REPOSITORY" --prerelease --title "Aso Bhasha Shiki $GITHUB_REF_NAME (early test)" --notes-file notes.md
+          gh release create "$TAG" app-debug.apk --repo "$GITHUB_REPOSITORY" --target "$GITHUB_SHA" --prerelease --title "Aso Bhasha Shiki $TAG (early test)" --notes-file notes.md
