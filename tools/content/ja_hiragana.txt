@@ -1,0 +1,110 @@
+// Japanese / Hiragana. Format: target|romaji|bangla|english|example (English)|kanji alternatives
+## N-row Words 1 | 1
+なつ|natsu|গ্রীষ্মকাল|summer|なつはあついです。 (Summer is hot.)|夏
+ねこ|neko|বিড়াল|cat|ねこがいます。 (There is a cat.)|猫
+いぬ|inu|কুকুর|dog|いぬがはしります。 (The dog runs.)|犬
+
+## N-row Words 2 | 1
+にく|niku|মাংস|meat|にくをたべます。 (I eat meat.)|肉
+のり|nori|শুকনো সামুদ্রিক শৈবাল|seaweed|のりはおいしいです。 (Seaweed is tasty.)|海苔
+なす|nasu|বেগুন|eggplant|なすをきります。 (I cut the eggplant.)|茄子
+
+## H-row Words 1 | 1
+はな|hana|ফুল|flower|はながさいています。 (The flowers are blooming.)|花
+ひと|hito|মানুষ|person|あのひとはせんせいです。 (That person is a teacher.)|人
+ふね|fune|জাহাজ|ship|ふねがみえます。 (I can see a ship.)|船
+
+## H-row Words 2 | 1
+へや|heya|কক্ষ|room|へやはひろいです。 (The room is big.)|部屋
+ほし|hoshi|তারা|star|ほしがきれいです。 (The stars are beautiful.)|星
+はし|hashi|চপস্টিক|chopsticks|はしでたべます。 (I eat with chopsticks.)|箸
+
+## M-row Words 1 | 1
+みず|mizu|পানি|water|みずをのみます。 (I drink water.)|水
+まど|mado|জানালা|window|まどをあけます。 (I open the window.)|窓
+むし|mushi|পোকা|insect|むしがいます。 (There is an insect.)|虫
+
+## M-row Words 2 | 1
+め|me|চোখ|eye|めがおおきいです。 (The eyes are big.)|目
+もも|momo|পীচ ফল|peach|ももはあまいです。 (Peaches are sweet.)|桃
+みみ|mimi|কান|ear|みみがいたいです。 (My ear hurts.)|耳
+
+## Y-row Words | 1
+やま|yama|পাহাড়|mountain|やまはたかいです。 (The mountain is high.)|山
+ゆき|yuki|তুষার|snow|ゆきがふります。 (Snow falls.)|雪
+よる|yoru|রাত|night|よるはしずかです。 (The night is quiet.)|夜
+
+## R-row Words 1 | 1
+さくら|sakura|চেরি ফুল|cherry blossom|さくらがきれいです。 (The cherry blossoms are pretty.)|桜
+りんご|ringo|আপেল|apple|りんごをたべます。 (I eat an apple.)|林檎
+くるま|kuruma|গাড়ি|car|くるまがはしります。 (The car runs.)|車
+
+## R-row Words 2 | 1
+ろく|roku|ছয়|six|ろくにんです。 (There are six people.)|六
+らくだ|rakuda|উট|camel|らくだはおおきいです。 (Camels are big.)|駱駝
+れんが|renga|ইট|brick|れんががあります。 (There are bricks.)|煉瓦
+
+## Wa and N Words | 1
+わに|wani|কুমির|crocodile|わにがいます。 (There is a crocodile.)|鰐
+ほん|hon|বই|book|ほんをよみます。 (I read a book.)|本
+みかん|mikan|কমলালেবু|mandarin orange|みかんをたべます。 (I eat a mandarin.)|蜜柑
+
+## G-row Words | 2
+かぎ|kagi|চাবি|key|かぎをさがします。 (I look for the key.)|鍵
+ごはん|gohan|ভাত|cooked rice|ごはんをたべます。 (I eat rice.)|ご飯
+ぎんこう|ginkou|ব্যাংক|bank|ぎんこうはどこですか。 (Where is the bank?)|銀行
+
+## Z-row Words | 2
+かぜ|kaze|বাতাস|wind|かぜがつよいです。 (The wind is strong.)|風
+ひざ|hiza|হাঁটু|knee|ひざがいたいです。 (My knee hurts.)|膝
+ぞう|zou|হাতি|elephant|ぞうはおおきいです。 (Elephants are big.)|象
+
+## D-row Words | 2
+でんわ|denwa|ফোন|telephone|でんわをかけます。 (I make a phone call.)|電話
+ともだち|tomodachi|বন্ধু|friend|ともだちとあそびます。 (I play with a friend.)|友達
+だいどころ|daidokoro|রান্নাঘর|kitchen|だいどころでりょうりします。 (I cook in the kitchen.)|台所
+
+## B-row Words | 2
+ばら|bara|গোলাপ|rose|ばらがきれいです。 (The roses are pretty.)|薔薇
+かばん|kaban|ব্যাগ|bag|かばんがおもいです。 (The bag is heavy.)|鞄
+ぼうし|boushi|টুপি|hat|ぼうしをかぶります。 (I wear a hat.)|帽子
+
+## P-row Words | 2
+さんぽ|sanpo|হাঁটাহাঁটি|walk|さんぽにいきます。 (I go for a walk.)|散歩
+えんぴつ|enpitsu|পেন্সিল|pencil|えんぴつでかきます。 (I write with a pencil.)|鉛筆
+てんぷら|tenpura|টেম্পুরা|tempura|てんぷらがすきです。 (I like tempura.)
+
+## Small Ya Words | 2
+おちゃ|ocha|চা|tea|おちゃをのみます。 (I drink tea.)|お茶
+しゃしん|shashin|ছবি|photograph|しゃしんをとります。 (I take a photo.)|写真
+じてんしゃ|jitensha|সাইকেল|bicycle|じてんしゃにのります。 (I ride a bicycle.)|自転車
+
+## Small Yu and Yo Words | 2
+きょう|kyou|আজ|today|きょうはあついです。 (Today is hot.)|今日
+しゅくだい|shukudai|বাড়ির কাজ|homework|しゅくだいをします。 (I do homework.)|宿題
+びょういん|byouin|হাসপাতাল|hospital|びょういんにいきます。 (I go to the hospital.)|病院
+
+## Small Yo and Yu Words | 2
+りょこう|ryokou|ভ্রমণ|travel|りょこうがすきです。 (I like traveling.)|旅行
+ぎゅうにゅう|gyuunyuu|দুধ|milk|ぎゅうにゅうをのみます。 (I drink milk.)|牛乳
+ひゃく|hyaku|একশ|one hundred|ひゃくえんです。 (It is one hundred yen.)|百
+
+## Long Vowel Words 1 | 2
+おかあさん|okaasan|মা|mother|おかあさんはやさしいです。 (My mother is kind.)|お母さん
+おとうさん|otousan|বাবা|father|おとうさんはいしゃです。 (My father is a doctor.)|お父さん
+せんせい|sensei|শিক্ষক|teacher|せんせいはしんせつです。 (The teacher is kind.)|先生
+
+## Long Vowel Words 2 | 2
+おにいさん|oniisan|বড় ভাই|older brother|おにいさんはたかいです。 (My older brother is tall.)|お兄さん
+おねえさん|oneesan|বড় বোন|older sister|おねえさんはうたいます。 (My older sister sings.)|お姉さん
+おおきい|ookii|বিশাল|big|おおきいいえです。 (It is a big house.)|大きい
+
+## Small Tsu Words | 2
+がっこう|gakkou|বিদ্যালয়|school|がっこうにいきます。 (I go to school.)|学校
+きっぷ|kippu|টিকিট|ticket|きっぷをかいます。 (I buy a ticket.)|切符
+ざっし|zasshi|ম্যাগাজিন|magazine|ざっしをよみます。 (I read a magazine.)|雑誌
+
+## About Japan | 2
+ひらがな|hiragana|হিরাগানা বর্ণমালা|hiragana letters|ひらがなをかきます。 (I write hiragana.)|平仮名
+にほん|nihon|জাপান|Japan|にほんにいきたいです。 (I want to go to Japan.)|日本
+にほんご|nihongo|জাপানি ভাষা|Japanese language|にほんごをべんきょうします。 (I study Japanese.)|日本語

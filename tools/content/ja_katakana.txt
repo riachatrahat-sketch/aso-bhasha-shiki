@@ -1,0 +1,100 @@
+// Japanese / Katakana (continues after ja_katakana_02)
+## Drinks and Sweets | 1
+ジュース|juusu|জুস|juice|ジュースをのみます。 (I drink juice.)
+コーラ|koora|কোলা|cola|コーラがすきです。 (I like cola.)
+アイスクリーム|aisu kuriimu|আইসক্রিম|ice cream|アイスクリームをたべます。 (I eat ice cream.)
+
+## Western Food 1 | 1
+サラダ|sarada|স্যালাড|salad|サラダをつくります。 (I make a salad.)
+ハンバーガー|hanbaagaa|হ্যামবার্গার|hamburger|ハンバーガーをたべます。 (I eat a hamburger.)
+ピザ|piza|পিৎজা|pizza|ピザがおいしいです。 (The pizza is delicious.)
+
+## Western Food 2 | 1
+カレー|karee|কারি|curry|カレーをたべます。 (I eat curry.)
+スパゲッティ|supagetti|স্প্যাগেটি|spaghetti|スパゲッティをつくります。 (I make spaghetti.)
+サンドイッチ|sandoicchi|স্যান্ডউইচ|sandwich|サンドイッチをたべます。 (I eat a sandwich.)
+
+## Snacks | 1
+チョコレート|chokoreeto|চকলেট|chocolate|チョコレートはあまいです。 (Chocolate is sweet.)
+クッキー|kukkii|কুকি|cookie|クッキーをやきます。 (I bake cookies.)
+ヨーグルト|yoguruto|দই|yogurt|ヨーグルトをたべます。 (I eat yogurt.)
+
+## Places 1 | 1
+レストラン|resutoran|রেস্তোরাঁ|restaurant|レストランでたべます。 (I eat at a restaurant.)
+スーパー|suupaa|সুপারমার্কেট|supermarket|スーパーでかいものをします。 (I shop at the supermarket.)
+コンビニ|konbini|কনভিনিয়েন্স স্টোর|convenience store|コンビニにいきます。 (I go to the convenience store.)
+
+## Places 2 | 1
+デパート|depaato|ডিপার্টমেন্ট স্টোর|department store|デパートはおおきいです。 (The department store is big.)
+プール|puuru|সুইমিং পুল|swimming pool|プールでおよぎます。 (I swim in the pool.)
+トイレ|toire|টয়লেট|toilet|トイレはどこですか。 (Where is the toilet?)
+
+## Vehicles | 1
+タクシー|takushii|ট্যাক্সি|taxi|タクシーにのります。 (I take a taxi.)
+トラック|torakku|ট্রাক|truck|トラックがとまります。 (The truck stops.)
+バイク|baiku|মোটরসাইকেল|motorbike|バイクがはやいです。 (The motorbike is fast.)
+
+## In the Building | 1
+エレベーター|erebeetaa|লিফট|elevator|エレベーターにのります。 (I take the elevator.)
+エスカレーター|esukareetaa|চলন্ত সিঁড়ি|escalator|エスカレーターはあそこです。 (The escalator is over there.)
+ドア|doa|দরজা|door|ドアをしめます。 (I close the door.)
+
+## Technology 1 | 1
+パソコン|pasokon|কম্পিউটার|computer|パソコンをつかいます。 (I use a computer.)
+スマホ|sumaho|স্মার্টফোন|smartphone|スマホをみます。 (I look at my smartphone.)
+カメラ|kamera|ক্যামেরা|camera|カメラをかいます。 (I buy a camera.)
+
+## Technology 2 | 1
+インターネット|intaanetto|ইন্টারনেট|internet|インターネットをつかいます。 (I use the internet.)
+メール|meeru|ইমেইল|email|メールをおくります。 (I send an email.)
+ゲーム|geemu|গেম|game|ゲームをします。 (I play a game.)
+
+## Furniture | 1
+テーブル|teeburu|টেবিল|table|テーブルのうえにほんがあります。 (There is a book on the table.)
+ベッド|beddo|খাট|bed|ベッドでねます。 (I sleep in the bed.)
+カーテン|kaaten|পর্দা|curtain|カーテンをあけます。 (I open the curtain.)
+
+## Tableware | 1
+ナイフ|naifu|ছুরি|knife|ナイフできります。 (I cut with a knife.)
+フォーク|fooku|কাঁটাচামচ|fork|フォークでたべます。 (I eat with a fork.)
+スプーン|supuun|চামচ|spoon|スプーンをつかいます。 (I use a spoon.)
+
+## Clothes | 2
+シャツ|shatsu|শার্ট|shirt|シャツをきます。 (I wear a shirt.)
+ズボン|zubon|প্যান্ট|trousers|ズボンをはきます。 (I wear trousers.)
+ネクタイ|nekutai|টাই|necktie|ネクタイをしめます。 (I tie a necktie.)
+
+## Sports | 2
+サッカー|sakkaa|ফুটবল|soccer|サッカーがすきです。 (I like soccer.)
+テニス|tenisu|টেনিস|tennis|テニスをします。 (I play tennis.)
+スポーツ|supootsu|খেলাধুলা|sports|スポーツがすきです。 (I like sports.)
+
+## Media | 2
+ラジオ|rajio|রেডিও|radio|ラジオをききます。 (I listen to the radio.)
+ニュース|nyuusu|খবর|news|ニュースをみます。 (I watch the news.)
+ドラマ|dorama|নাটক|drama|ドラマをみます。 (I watch a drama.)
+
+## Countries 1 | 2
+アメリカ|amerika|আমেরিকা|America|アメリカにいきます。 (I go to America.)
+イギリス|igirisu|ইংল্যান্ড|England|イギリスはさむいです。 (England is cold.)
+インド|indo|ভারত|India|インドはおおきいです。 (India is big.)
+
+## Countries 2 | 2
+バングラデシュ|banguradeshu|বাংলাদেশ|Bangladesh|バングラデシュからきました。 (I came from Bangladesh.)
+ネパール|nepaaru|নেপাল|Nepal|ネパールはやまがおおいです。 (Nepal has many mountains.)
+フランス|furansu|ফ্রান্স|France|フランスはきれいです。 (France is beautiful.)
+
+## Countries 3 | 2
+ドイツ|doitsu|জার্মানি|Germany|ドイツのくるまです。 (It is a German car.)
+カナダ|kanada|কানাডা|Canada|カナダはひろいです。 (Canada is vast.)
+ブラジル|burajiru|ব্রাজিল|Brazil|ブラジルはサッカーがつよいです。 (Brazil is strong at soccer.)
+
+## Stationery | 2
+ノート|nooto|খাতা|notebook|ノートにかきます。 (I write in a notebook.)
+ペン|pen|কলম|pen|ペンをかします。 (I lend a pen.)
+ボールペン|boorupen|বলপয়েন্ট কলম|ballpoint pen|ボールペンでなまえをかきます。 (I write my name with a ballpoint pen.)
+
+## Home Things | 2
+アパート|apaato|অ্যাপার্টমেন্ট|apartment|アパートにすんでいます。 (I live in an apartment.)
+エアコン|eakon|এয়ার কন্ডিশনার|air conditioner|エアコンをつけます。 (I turn on the air conditioner.)
+ランプ|ranpu|ল্যাম্প|lamp|ランプをけします。 (I turn off the lamp.)

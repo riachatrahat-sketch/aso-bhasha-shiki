@@ -1,0 +1,180 @@
+// English / Beginner (continues after en_beginner_04)
+## Good Evening and Goodbye | 1
+Good evening|শুভ সন্ধ্যা|A greeting used in the evening|Good evening, everyone.
+Good night|শুভ রাত্রি|Said before going to sleep|Good night, Mom.
+Goodbye|বিদায়|Said when leaving|Goodbye, see you tomorrow.
+
+## Please and Sorry | 1
+Please|দয়া করে|A polite word when you ask for something|Please sit down.
+Sorry|দুঃখিত|Said when you make a mistake|Sorry, I am late.
+Excuse me|মাফ করবেন|Used to get someone's attention|Excuse me, can I ask a question?
+
+## Yes, No and Maybe | 1
+Yes|হ্যাঁ|The word for agreeing|Yes, I understand.
+No|না|The word for disagreeing|No, thank you.
+Maybe|হয়তো|Used when you are not sure|Maybe I will come tomorrow.
+
+## Colors One | 1
+red|লাল|The color of blood|The apple is red.
+blue|নীল|The color of the sky|My bag is blue.
+green|সবুজ|The color of grass|The leaves are green.
+
+## Colors Two | 1
+yellow|হলুদ|The color of the sun|The banana is yellow.
+black|কালো|The darkest color|The crow is black.
+white|সাদা|The color of milk|Her shirt is white.
+
+## Numbers One to Three | 1
+one|এক|The number 1|I have one brother.
+two|দুই|The number 2|She has two pens.
+three|তিন|The number 3|We need three chairs.
+
+## Numbers Four to Six | 1
+four|চার|The number 4|A table has four legs.
+five|পাঁচ|The number 5|I have five fingers on one hand.
+six|ছয়|The number 6|It is six o'clock.
+
+## Numbers Seven to Ten | 1
+seven|সাত|The number 7|There are seven days in a week.
+eight|আট|The number 8|My brother is eight years old.
+ten|দশ|The number 10|Count from one to ten.
+
+## Days at the Start of the Week | 1
+Sunday|রবিবার|The first day of the week|We rest on Sunday.
+Monday|সোমবার|The day after Sunday|School starts on Monday.
+Tuesday|মঙ্গলবার|The day after Monday|I have class on Tuesday.
+
+## Days in the Middle and End | 1
+Wednesday|বুধবার|The day after Tuesday|The market is open on Wednesday.
+Thursday|বৃহস্পতিবার|The day after Wednesday|My exam is on Thursday.
+Friday|শুক্রবার|The day before Saturday|We pray together on Friday.
+
+## Family One | 1
+mother|মা|A female parent|My mother cooks well.
+father|বাবা|A male parent|My father works in an office.
+brother|ভাই|A boy with the same parents|My brother plays football.
+
+## Family Two | 1
+sister|বোন|A girl with the same parents|My sister reads a lot.
+grandmother|দাদি|The mother of your father|My grandmother tells good stories.
+uncle|চাচা|The brother of your father|My uncle lives in Chittagong.
+
+## Parts of the Body | 1
+head|মাথা|The top part of the body|My head hurts.
+hand|হাত|The part at the end of your arm|Wash your hands.
+eye|চোখ|You see with it|She has big eyes.
+
+## Face and Senses | 1
+nose|নাক|You smell with it|My nose is cold.
+ear|কান|You hear with it|He has a pain in his ear.
+mouth|মুখ|You eat and speak with it|Open your mouth.
+
+## Fruits | 1
+apple|আপেল|A round red or green fruit|I eat an apple every day.
+mango|আম|A sweet yellow tropical fruit|Mango is my favorite fruit.
+banana|কলা|A long yellow fruit|The monkey likes the banana.
+
+## More Fruits | 1
+orange|কমলা|A round orange fruit|She drinks orange juice.
+grape|আঙুর|A small fruit that grows in bunches|These grapes are sweet.
+watermelon|তরমুজ|A big green fruit that is red inside|We eat watermelon in summer.
+
+## Vegetables | 1
+potato|আলু|A vegetable that grows under the ground|I like fried potato.
+onion|পেঁয়াজ|A vegetable that makes you cry|Cut the onion.
+tomato|টমেটো|A red vegetable used in salad|Add a tomato to the salad.
+
+## Animals at Home | 1
+cat|বিড়াল|A small pet that says meow|The cat is on the sofa.
+dog|কুকুর|A pet that barks|My dog is friendly.
+cow|গরু|A farm animal that gives milk|The cow eats grass.
+
+## Animals in the Wild | 1
+bird|পাখি|An animal that can fly|A bird is singing.
+fish|মাছ|An animal that lives in water|We had fish for lunch.
+tiger|বাঘ|A big wild cat with stripes|The tiger lives in the Sundarbans.
+
+## Food | 1
+rice|ভাত|The main food in Bangladesh|We eat rice every day.
+bread|রুটি|A baked food made from flour|I have bread for breakfast.
+egg|ডিম|Food from a hen|She boiled an egg.
+
+## Drinks | 1
+milk|দুধ|A white drink from cows|The baby drinks milk.
+tea|চা|A hot drink made from leaves|Do you want some tea?
+juice|জুস|A drink made from fruit|I like mango juice.
+
+## Things in the House | 1
+house|ঘর|A building where people live|Our house is small.
+door|দরজা|You open it to go in or out|Please close the door.
+window|জানালা|A glass opening in a wall|Open the window.
+
+## Furniture | 1
+table|টেবিল|A flat piece of furniture for food or work|The book is on the table.
+chair|চেয়ার|You sit on it|Take a chair.
+bed|বিছানা|You sleep on it|The bed is soft.
+
+## School Things | 1
+pen|কলম|You write with it|May I borrow your pen?
+bag|ব্যাগ|You carry books in it|My bag is heavy.
+teacher|শিক্ষক|A person who teaches|The teacher is kind.
+
+## In the Classroom | 1
+class|ক্লাস|A group of students or a lesson|The class starts at nine.
+desk|ডেস্ক|A table for studying|I sit at my desk.
+notebook|খাতা|A book with empty pages for writing|Write it in your notebook.
+
+## Clothes | 1
+shirt|শার্ট|Clothing for the upper body|He wears a white shirt.
+shoes|জুতা|You wear them on your feet|Where are my shoes?
+hat|টুপি|You wear it on your head|The sun is hot, wear a hat.
+
+## Weather | 1
+rain|বৃষ্টি|Water that falls from clouds|I love the rain.
+sun|সূর্য|The star that gives us light|The sun is bright today.
+wind|বাতাস|Moving air|The wind is strong.
+
+## Hot and Cold | 1
+hot|গরম|Having a high temperature|The tea is hot.
+cold|ঠান্ডা|Having a low temperature|The water is cold.
+warm|উষ্ণ|A little hot, in a nice way|It is warm in the room.
+
+## Feelings | 1
+happy|খুশি|Feeling good and joyful|I am happy today.
+sad|দুঃখিত মন|Feeling unhappy|She looks sad.
+tired|ক্লান্ত|Needing rest|I am tired after work.
+
+## More Feelings | 1
+hungry|ক্ষুধার্ত|Needing food|I am very hungry.
+thirsty|তৃষ্ণার্ত|Needing water|He is thirsty.
+angry|রাগান্বিত|Feeling very upset with someone|Dad is angry.
+
+## Big and Small | 1
+big|বড়|Large in size|That is a big house.
+small|ছোট|Little in size|I have a small bag.
+long|লম্বা|Having great length|This road is long.
+
+## Good and Bad | 1
+good|ভালো|Of high quality|This is a good book.
+bad|খারাপ|Not good|The smell is bad.
+new|নতুন|Just made or bought|I have a new phone.
+
+## Time of Day | 1
+morning|সকাল|The early part of the day|I walk in the morning.
+afternoon|বিকাল|The time after noon|We play in the afternoon.
+night|রাত|The dark part of the day|The stars come out at night.
+
+## Today and Tomorrow | 1
+today|আজ|This day|Today is a holiday.
+tomorrow|আগামীকাল|The day after today|See you tomorrow.
+yesterday|গতকাল|The day before today|I was sick yesterday.
+
+## Simple Verbs One | 1
+eat|খাওয়া|Put food in your mouth|We eat dinner at eight.
+drink|পান করা|Take liquid into your mouth|Drink more water.
+sleep|ঘুমানো|Rest with your eyes closed|Babies sleep a lot.
+
+## Simple Verbs Two | 1
+go|যাওয়া|Move from one place to another|I go to school by bus.
+come|আসা|Move toward the speaker|Please come here.
+sit|বসা|Rest on a chair|Sit down, please.

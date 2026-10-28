@@ -9,7 +9,11 @@ and `flutter test` first and fix whatever they report.
 
 ## Features
 - Email/password auth with verification and password reset; Firestore profile.
-- 2 languages, levels, lessons (12 sample lessons in `assets/content/lessons.json`).
+- 2 languages (English, Japanese), 336 lessons = 3,024 tasks in `assets/content/lessons.json`
+  (English Beginner to Advanced; Japanese Hiragana, Katakana, JLPT N5 and N4).
+  Lessons are written in simple text files under `tools/content/` and built into the JSON
+  with `python3 tools/build_lessons.py`, which also checks the content for mistakes.
+  Content is AI-written; a native Bengali/Japanese speaker should review it.
 - 3 activities per lesson, 3 questions each: Speaking, Listening, Writing.
 - Scoring: +0.5 per correct question (once), -1 on the first wrong attempt of a
   question, no skipping, questions unlock in order, retry never duplicates points.
@@ -79,3 +83,8 @@ The TypeScript logic tests (19) passed when written; the Dart tests were not run
 - Legal screens are templates, not legal advice.
 
 See `docs/PLATFORM_SETUP.md` for Android/iOS permissions.
+
+## No local Flutter? Use GitHub Actions
+`.github/workflows/ci.yml` runs `flutter analyze`, `flutter test`, builds a debug
+APK (downloadable under the run's Artifacts) and builds/tests the Cloud Functions.
+Open the repository's **Actions** tab after each push.

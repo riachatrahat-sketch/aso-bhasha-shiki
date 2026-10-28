@@ -1,0 +1,275 @@
+// Japanese / JLPT N5 (continues after ja_n5_03). Targets are kana only; kanji go in the last column.
+## Numbers 1 to 3 | 1
+いち|ichi|এক|one|いちじです。 (It is one o'clock.)|一
+に|ni|দুই|two|にじゅうえんです。 (It is twenty yen.)|二
+さん|san|তিন|three|さんにんいます。 (There are three people.)|三
+
+## Numbers 4 to 7 | 1
+よん|yon|চার|four|よんじです。 (It is four o'clock.)|四
+ご|go|পাঁচ|five|ごじです。 (It is five o'clock.)|五
+なな|nana|সাত|seven|ななじです。 (It is seven o'clock.)|七
+
+## Numbers 8 to 10 | 1
+はち|hachi|আট|eight|はちじです。 (It is eight o'clock.)|八
+きゅう|kyuu|নয়|nine|きゅうじです。 (It is nine o'clock.)|九
+じゅう|juu|দশ|ten|じゅうにんです。 (There are ten people.)|十
+
+## Days of the Week 1 | 1
+にちようび|nichiyoubi|রবিবার|Sunday|にちようびはやすみです。 (Sunday is a day off.)|日曜日
+げつようび|getsuyoubi|সোমবার|Monday|げつようびにがっこうにいきます。 (I go to school on Monday.)|月曜日
+かようび|kayoubi|মঙ্গলবার|Tuesday|かようびはいそがしいです。 (I am busy on Tuesday.)|火曜日
+
+## Days of the Week 2 | 1
+すいようび|suiyoubi|বুধবার|Wednesday|すいようびにテストがあります。 (There is a test on Wednesday.)|水曜日
+もくようび|mokuyoubi|বৃহস্পতিবার|Thursday|もくようびにかいものします。 (I shop on Thursday.)|木曜日
+きんようび|kinyoubi|শুক্রবার|Friday|きんようびはいそがしいです。 (I am busy on Friday.)|金曜日
+
+## Saturday and Now | 1
+どようび|doyoubi|শনিবার|Saturday|どようびはやすみです。 (Saturday is a holiday.)|土曜日
+いま|ima|এখন|now|いまなんじですか。 (What time is it now?)|今
+あした|ashita|আগামীকাল|tomorrow|あしたあいましょう。 (Let us meet tomorrow.)|明日
+
+## Time Words 1 | 1
+きのう|kinou|গতকাল|yesterday|きのうあめでした。 (It rained yesterday.)|昨日
+まいにち|mainichi|প্রতিদিন|every day|まいにちべんきょうします。 (I study every day.)|毎日
+あさ|asa|সকাল|morning|あさごはんをたべます。 (I eat breakfast.)|朝
+
+## Time Words 2 | 1
+ひる|hiru|দুপুর|noon|ひるにやすみます。 (I rest at noon.)|昼
+ゆうがた|yuugata|সন্ধ্যাবেলা|evening|ゆうがたにさんぽします。 (I walk in the evening.)|夕方
+こんばん|konban|আজ রাতে|tonight|こんばんテレビをみます。 (I watch TV tonight.)|今晩
+
+## Greetings 2 | 1
+こんにちは|konnichiwa|শুভ দিন|hello (daytime)|こんにちは、げんきですか。 (Hello, how are you?)|今日は
+こんばんは|konbanwa|শুভ সন্ধ্যা|good evening|こんばんは、さとうさん。 (Good evening, Mr. Sato.)|今晩は
+おやすみなさい|oyasuminasai|শুভ রাত্রি|good night|おやすみなさい、またあした。 (Good night, see you tomorrow.)|お休みなさい
+
+## Farewells and Apologies | 1
+さようなら|sayounara|বিদায়|goodbye|さようなら、またあした。 (Goodbye, see you tomorrow.)
+ごめんなさい|gomennasai|আমি দুঃখিত|I am sorry (casual)|ごめんなさい、おくれました。 (I am sorry, I am late.)
+どういたしまして|douitashimashite|কিছু না, স্বাগতম|you are welcome|ありがとう。どういたしまして。 (Thank you. You are welcome.)
+
+## Meal Greetings | 1
+いただきます|itadakimasu|খাওয়ার আগে বলা কথা|said before eating|いただきます。おいしそうです。 (Let us eat. It looks delicious.)
+ごちそうさまでした|gochisousama deshita|খাওয়ার পর বলা কথা|said after eating|ごちそうさまでした。おいしかったです。 (Thank you for the meal. It was delicious.)
+いってきます|ittekimasu|আমি বেরোচ্ছি|I am leaving (home)|いってきます。 (I am off.)|行ってきます
+
+## Coming and Going Home | 1
+いってらっしゃい|itterasshai|সাবধানে যান|take care on your way|いってらっしゃい、きをつけて。 (Take care on your way.)|行ってらっしゃい
+ただいま|tadaima|আমি বাড়ি ফিরেছি|I am home|ただいま。 (I am home.)
+おかえりなさい|okaerinasai|ফিরে আসায় স্বাগতম|welcome home|おかえりなさい。 (Welcome home.)|お帰りなさい
+
+## Pronouns 1 | 1
+わたし|watashi|আমি|I|わたしはバングラデシュじんです。 (I am Bangladeshi.)|私
+あなた|anata|আপনি|you|あなたはがくせいですか。 (Are you a student?)
+かれ|kare|সে (ছেলে)|he|かれはせんせいです。 (He is a teacher.)|彼
+
+## Pronouns 2 | 1
+かのじょ|kanojo|সে (মেয়ে)|she|かのじょはいしゃです。 (She is a doctor.)|彼女
+わたしたち|watashitachi|আমরা|we|わたしたちはともだちです。 (We are friends.)|私たち
+みなさん|minasan|সবাই|everyone|みなさん、こんにちは。 (Hello, everyone.)|皆さん
+
+## This, That, That Over There | 1
+これ|kore|এটা (আমার কাছে)|this|これはほんです。 (This is a book.)
+それ|sore|ওটা (আপনার কাছে)|that|それはなんですか。 (What is that?)
+あれ|are|ওই যে (দূরে)|that over there|あれはやまです。 (That is a mountain.)
+
+## Here and There | 1
+ここ|koko|এই জায়গা|here|ここがわたしのうちです。 (This is my home.)
+そこ|soko|ওই জায়গা (কাছে)|there|そこにすわってください。 (Please sit there.)
+あそこ|asoko|ওই দূরের জায়গা|over there|あそこにえきがあります。 (There is a station over there.)
+
+## Question Words 1 | 1
+なに|nani|কী|what|なにをたべますか。 (What will you eat?)|何
+だれ|dare|কে|who|あのひとはだれですか。 (Who is that person?)|誰
+いつ|itsu|কখন|when|いつにほんにいきますか。 (When will you go to Japan?)
+
+## Question Words 2 | 1
+どこ|doko|কোথায়|where|どこにすんでいますか。 (Where do you live?)
+どれ|dore|কোনটা|which one|どれがすきですか。 (Which one do you like?)
+いくつ|ikutsu|কয়টা|how many|りんごはいくつですか。 (How many apples are there?)
+
+## The Family | 1
+かぞく|kazoku|পরিবার|family|かぞくはよにんです。 (My family has four people.)|家族
+りょうしん|ryoushin|বাবা-মা|parents|りょうしんはげんきです。 (My parents are well.)|両親
+こども|kodomo|শিশু|child|こどもがあそんでいます。 (The children are playing.)|子供
+
+## Grandparents and Siblings | 1
+おじいさん|ojiisan|দাদা বা নানা|grandfather|おじいさんはやさしいです。 (My grandfather is gentle.)|お爺さん
+おばあさん|obaasan|দাদি বা নানি|grandmother|おばあさんはおりょうりがじょうずです。 (My grandmother is good at cooking.)|お婆さん
+きょうだい|kyoudai|ভাইবোন|siblings|きょうだいはさんにんです。 (I have three siblings.)|兄弟
+
+## People and Jobs 1 | 1
+がくせい|gakusei|ছাত্র|student|わたしはがくせいです。 (I am a student.)|学生
+いしゃ|isha|ডাক্তার|doctor|あのひとはいしゃです。 (That person is a doctor.)|医者
+かいしゃいん|kaishain|অফিসকর্মী|company employee|ちちはかいしゃいんです。 (My father is a company employee.)|会社員
+
+## People and Jobs 2 | 1
+うんてんしゅ|untenshu|চালক|driver|うんてんしゅはしんせつです。 (The driver is kind.)|運転手
+べんごし|bengoshi|আইনজীবী|lawyer|あねはべんごしです。 (My older sister is a lawyer.)|弁護士
+かんごし|kangoshi|নার্স|nurse|かんごしがきました。 (The nurse came.)|看護師
+
+## Basic Verbs 1 | 1
+たべます|tabemasu|আমি খাই|eat|パンをたべます。 (I eat bread.)|食べます
+のみます|nomimasu|আমি পান করি|drink|おちゃをのみます。 (I drink tea.)|飲みます
+みます|mimasu|আমি দেখি|see or watch|テレビをみます。 (I watch TV.)|見ます
+
+## Basic Verbs 2 | 1
+いきます|ikimasu|আমি যাই|go|がっこうにいきます。 (I go to school.)|行きます
+きます|kimasu|আমি আসি|come|ともだちがきます。 (My friend comes.)|来ます
+かえります|kaerimasu|আমি ফিরে যাই|return|うちにかえります。 (I go back home.)|帰ります
+
+## Basic Verbs 3 | 1
+かいます|kaimasu|আমি কিনি|buy|ほんをかいます。 (I buy a book.)|買います
+よみます|yomimasu|আমি পড়ি|read|しんぶんをよみます。 (I read the newspaper.)|読みます
+かきます|kakimasu|আমি লিখি|write|てがみをかきます。 (I write a letter.)|書きます
+
+## Basic Verbs 4 | 1
+ききます|kikimasu|আমি শুনি|listen|おんがくをききます。 (I listen to music.)|聞きます
+はなします|hanashimasu|আমি কথা বলি|speak|にほんごではなします。 (I speak in Japanese.)|話します
+します|shimasu|আমি করি|do|しゅくだいをします。 (I do my homework.)
+
+## Daily Verbs | 1
+ねます|nemasu|আমি ঘুমাই|sleep|じゅうじにねます。 (I sleep at ten.)|寝ます
+おきます|okimasu|আমি ঘুম থেকে উঠি|wake up|ろくじにおきます。 (I wake up at six.)|起きます
+べんきょうします|benkyou shimasu|আমি পড়াশোনা করি|study|にほんごをべんきょうします。 (I study Japanese.)|勉強します
+
+## More Verbs | 1
+はたらきます|hatarakimasu|আমি কাজ করি|work|ぎんこうではたらきます。 (I work at a bank.)|働きます
+あいます|aimasu|আমি দেখা করি|meet|ともだちにあいます。 (I meet a friend.)|会います
+あそびます|asobimasu|আমি খেলি বা ঘুরে বেড়াই|play|こうえんであそびます。 (I play in the park.)|遊びます
+
+## Adjectives: Size and Price | 2
+ちいさい|chiisai|ছোট|small|ちいさいかばんです。 (It is a small bag.)|小さい
+たかい|takai|উঁচু বা দামি|high or expensive|このくるまはたかいです。 (This car is expensive.)|高い
+やすい|yasui|সস্তা|cheap|このほんはやすいです。 (This book is cheap.)|安い
+
+## Adjectives: New and Old | 2
+あたらしい|atarashii|নতুন|new|あたらしいくつです。 (They are new shoes.)|新しい
+ふるい|furui|পুরোনো|old (things)|ふるいいえです。 (It is an old house.)|古い
+いい|ii|ভালো|good|いいてんきですね。 (It is nice weather.)|良い
+
+## Adjectives: Quality | 2
+わるい|warui|খারাপ|bad|てんきがわるいです。 (The weather is bad.)|悪い
+おいしい|oishii|সুস্বাদু|delicious|このケーキはおいしいです。 (This cake is delicious.)|美味しい
+たのしい|tanoshii|আনন্দদায়ক|fun|にほんごはたのしいです。 (Japanese is fun.)|楽しい
+
+## Adjectives: Weather | 2
+あつい|atsui|গরম (আবহাওয়া)|hot weather|きょうはあついです。 (It is hot today.)|暑い
+さむい|samui|শীত লাগার মতো ঠান্ডা|cold weather|ふゆはさむいです。 (Winter is cold.)|寒い
+あたたかい|atatakai|উষ্ণ|warm|へやがあたたかいです。 (The room is warm.)|暖かい
+
+## Adjectives: Shape | 2
+ながい|nagai|লম্বা (দৈর্ঘ্যে)|long|ながいかわです。 (It is a long river.)|長い
+みじかい|mijikai|খাটো (দৈর্ঘ্যে)|short|みじかいえんぴつです。 (It is a short pencil.)|短い
+ひろい|hiroi|প্রশস্ত|spacious|ひろいへやです。 (It is a spacious room.)|広い
+
+## Adjectives: Feelings | 2
+むずかしい|muzukashii|কঠিন|difficult|かんじはむずかしいです。 (Kanji is difficult.)|難しい
+やさしい|yasashii|সহজ|easy|このもんだいはやさしいです。 (This question is easy.)|易しい
+おもしろい|omoshiroi|মজার|interesting|このえいがはおもしろいです。 (This movie is interesting.)|面白い
+
+## Colors 1 | 1
+あかい|akai|লাল|red|あかいはなです。 (It is a red flower.)|赤い
+あおい|aoi|নীল|blue|あおいそらです。 (It is a blue sky.)|青い
+くろい|kuroi|কালো|black|くろいかばんです。 (It is a black bag.)|黒い
+
+## Colors 2 | 1
+しろい|shiroi|সাদা|white|しろいシャツです。 (It is a white shirt.)|白い
+きいろい|kiiroi|হলুদ|yellow|きいろいバナナです。 (It is a yellow banana.)|黄色い
+みどり|midori|সবুজ|green|みどりのはっぱです。 (It is a green leaf.)|緑
+
+## Food: Basics | 1
+やさい|yasai|শাকসবজি|vegetables|やさいをたべます。 (I eat vegetables.)|野菜
+くだもの|kudamono|ফল|fruit|くだものがすきです。 (I like fruit.)|果物
+たまねぎ|tamanegi|পেঁয়াজ|onion|たまねぎをきります。 (I cut an onion.)|玉ねぎ
+
+## Food: Meat and Seafood | 1
+とりにく|toriniku|মুরগির মাংস|chicken meat|とりにくをたべます。 (I eat chicken.)|鶏肉
+ぎゅうにく|gyuuniku|গরুর মাংস|beef|ぎゅうにくがすきです。 (I like beef.)|牛肉
+えび|ebi|চিংড়ি|shrimp|えびのてんぷらです。 (It is shrimp tempura.)|海老
+
+## Food: Japanese Dishes | 1
+みそしる|misoshiru|মিসো স্যুপ|miso soup|みそしるをのみます。 (I drink miso soup.)|味噌汁
+うどん|udon|উদোন নুডলস|udon noodles|うどんをたべます。 (I eat udon.)
+そば|soba|সোবা নুডলস|soba noodles|そばがすきです。 (I like soba.)
+
+## Places in Town 1 | 1
+えき|eki|স্টেশন|station|えきはちかいです。 (The station is near.)|駅
+みせ|mise|দোকান|shop|みせはあいています。 (The shop is open.)|店
+こうえん|kouen|উদ্যান|park|こうえんをあるきます。 (I walk in the park.)|公園
+
+## Places in Town 2 | 1
+としょかん|toshokan|গ্রন্থাগার|library|としょかんでべんきょうします。 (I study at the library.)|図書館
+ゆうびんきょく|yuubinkyoku|ডাকঘর|post office|ゆうびんきょくにいきます。 (I go to the post office.)|郵便局
+くうこう|kuukou|বিমানবন্দর|airport|くうこうはとおいです。 (The airport is far.)|空港
+
+## Nature | 1
+そら|sora|আকাশ|sky|そらがあおいです。 (The sky is blue.)|空
+かわ|kawa|নদী|river|かわでおよぎます。 (I swim in the river.)|川
+き|ki|গাছ|tree|きのしたにすわります。 (I sit under the tree.)|木
+
+## Daily Objects | 1
+とけい|tokei|ঘড়ি|clock|とけいをみます。 (I look at the clock.)|時計
+めがね|megane|চশমা|glasses|めがねをかけます。 (I wear glasses.)|眼鏡
+さいふ|saifu|মানিব্যাগ|wallet|さいふをわすれました。 (I forgot my wallet.)|財布
+
+## Body Parts 1 | 1
+あたま|atama|মাথা|head|あたまがいたいです。 (I have a headache.)|頭
+て|te|হাত|hand|てをあらいます。 (I wash my hands.)|手
+あし|ashi|পা|leg or foot|あしがながいです。 (The legs are long.)|足
+
+## Body Parts 2 | 1
+は|ha|দাঁত|tooth|はをみがきます。 (I brush my teeth.)|歯
+おなか|onaka|পেট|stomach|おなかがすきました。 (I am hungry.)|お腹
+のど|nodo|গলা|throat|のどがいたいです。 (My throat hurts.)|喉
+
+## Weather | 1
+あめ|ame|বৃষ্টি|rain|あめがふっています。 (It is raining.)|雨
+くもり|kumori|মেঘলা আবহাওয়া|cloudy weather|きょうはくもりです。 (Today is cloudy.)|曇り
+てんき|tenki|আবহাওয়া|weather|きょうのてんきはいいです。 (The weather is good today.)|天気
+
+## Positions 1 | 1
+うえ|ue|উপরে|above|つくえのうえにほんがあります。 (There is a book on the desk.)|上
+した|shita|নিচে|below|いすのしたにねこがいます。 (The cat is under the chair.)|下
+なか|naka|ভেতরে|inside|かばんのなかにさいふがあります。 (My wallet is in the bag.)|中
+
+## Positions 2 | 1
+まえ|mae|সামনে|front|えきのまえでまちます。 (I wait in front of the station.)|前
+うしろ|ushiro|পেছনে|behind|いえのうしろにきがあります。 (There is a tree behind the house.)|後ろ
+となり|tonari|পাশে|next to|ぎんこうのとなりにみせがあります。 (There is a shop next to the bank.)|隣
+
+## Directions | 1
+みぎ|migi|ডান দিক|right|みぎにまがります。 (I turn right.)|右
+ひだり|hidari|বাম দিক|left|ひだりにえきがあります。 (The station is on the left.)|左
+まっすぐ|massugu|সোজা|straight|まっすぐいってください。 (Please go straight.)
+
+## Useful Phrases 1 | 1
+おねがいします|onegaishimasu|অনুগ্রহ করে (অনুরোধ)|please (a request)|おみずをおねがいします。 (Water, please.)|お願いします
+だいじょうぶです|daijoubu desu|ঠিক আছে|it is all right|わたしはだいじょうぶです。 (I am all right.)|大丈夫です
+わかりません|wakarimasen|আমি বুঝতে পারছি না|I do not understand|すみません、わかりません。 (Sorry, I do not understand.)|分かりません
+
+## Useful Phrases 2 | 1
+もういちどおねがいします|mou ichido onegaishimasu|আরেকবার বলুন, অনুগ্রহ করে|once more, please|すみません、もういちどおねがいします。 (Sorry, once more please.)|もう一度お願いします
+ゆっくりおねがいします|yukkuri onegaishimasu|ধীরে বলুন, অনুগ্রহ করে|slowly, please|ゆっくりおねがいします。 (Slowly, please.)|ゆっくりお願いします
+えいごがわかりますか|eigo ga wakarimasu ka|আপনি কি ইংরেজি বোঝেন?|do you understand English?|えいごがわかりますか。 (Do you understand English?)|英語が分かりますか
+
+## Talking About Yourself | 2
+バングラデシュからきました|banguradeshu kara kimashita|আমি বাংলাদেশ থেকে এসেছি|I came from Bangladesh|バングラデシュからきました。 (I came from Bangladesh.)
+にほんごがすこしはなせます|nihongo ga sukoshi hanasemasu|আমি একটু জাপানি বলতে পারি|I can speak a little Japanese|にほんごがすこしはなせます。 (I can speak a little Japanese.)|日本語が少し話せます
+よろしくおねがいします|yoroshiku onegaishimasu|আপনার সহযোগিতা কামনা করি|please treat me kindly|はじめまして。よろしくおねがいします。 (Nice to meet you. Please treat me kindly.)|よろしくお願いします
+
+## Ordering 1 | 2
+みずをください|mizu wo kudasai|আমাকে পানি দিন|please give me water|みずをください。 (Please give me water.)|水をください
+これをください|kore wo kudasai|আমাকে এটা দিন|please give me this|これをください。 (Please give me this.)
+おかんじょうをおねがいします|okanjou wo onegaishimasu|বিলটা দিন|the bill, please|おかんじょうをおねがいします。 (The bill, please.)|お勘定をお願いします
+
+## Ordering 2 | 2
+メニューをください|menyuu wo kudasai|আমাকে মেনু দিন|please give me the menu|メニューをください。 (Please give me the menu.)
+ひとつください|hitotsu kudasai|একটা দিন|one, please|ひとつください。 (One, please.)|一つください
+いっしょにたべましょう|issho ni tabemashou|চলুন একসঙ্গে খাই|let us eat together|いっしょにたべましょう。 (Let us eat together.)|一緒に食べましょう
+
+## Asking the Way | 2
+えきはどこですか|eki wa doko desu ka|স্টেশন কোথায়?|where is the station?|すみません、えきはどこですか。 (Excuse me, where is the station?)|駅はどこですか
+トイレはどこですか|toire wa doko desu ka|টয়লেট কোথায়?|where is the toilet?|トイレはどこですか。 (Where is the toilet?)
+でんしゃにのります|densha ni norimasu|আমি ট্রেনে চড়ি|I ride the train|でんしゃにのります。 (I ride the train.)|電車に乗ります

@@ -1,0 +1,315 @@
+// Japanese / JLPT N4. Targets are kana only; kanji go in the last column.
+## Polite Requests 1 | 2
+たべてください|tabete kudasai|অনুগ্রহ করে খান|please eat|これをたべてください。 (Please eat this.)|食べてください
+みてください|mite kudasai|অনুগ্রহ করে দেখুন|please look|ここをみてください。 (Please look here.)|見てください
+まってください|matte kudasai|অনুগ্রহ করে অপেক্ষা করুন|please wait|ちょっとまってください。 (Please wait a moment.)|待ってください
+
+## Polite Requests 2 | 2
+きいてください|kiite kudasai|অনুগ্রহ করে শুনুন|please listen|よくきいてください。 (Please listen carefully.)|聞いてください
+かいてください|kaite kudasai|অনুগ্রহ করে লিখুন|please write|なまえをかいてください。 (Please write your name.)|書いてください
+よんでください|yonde kudasai|অনুগ্রহ করে পড়ুন|please read|ここをよんでください。 (Please read here.)|読んでください
+
+## Polite Requests 3 | 2
+すわってください|suwatte kudasai|অনুগ্রহ করে বসুন|please sit down|ここにすわってください。 (Please sit here.)|座ってください
+はいってください|haitte kudasai|অনুগ্রহ করে ভেতরে আসুন|please come in|どうぞ、はいってください。 (Please, come in.)|入ってください
+おしえてください|oshiete kudasai|অনুগ্রহ করে শিখিয়ে দিন|please teach me|みちをおしえてください。 (Please tell me the way.)|教えてください
+
+## Doing Right Now | 2
+いまたべています|ima tabete imasu|আমি এখন খাচ্ছি|I am eating now|いまひるごはんをたべています。 (I am eating lunch now.)|今食べています
+テレビをみています|terebi wo mite imasu|আমি টিভি দেখছি|I am watching TV|いえでテレビをみています。 (I am watching TV at home.)|テレビを見ています
+べんきょうしています|benkyou shite imasu|আমি পড়াশোনা করছি|I am studying|いまにほんごをべんきょうしています。 (I am studying Japanese now.)|勉強しています
+
+## Asking Permission | 2
+はいってもいいですか|haitte mo ii desu ka|আমি কি ঢুকতে পারি?|may I come in?|はいってもいいですか。 (May I come in?)|入ってもいいですか
+すわってもいいですか|suwatte mo ii desu ka|আমি কি বসতে পারি?|may I sit?|ここにすわってもいいですか。 (May I sit here?)|座ってもいいですか
+しゃしんをとってもいいですか|shashin wo totte mo ii desu ka|আমি কি ছবি তুলতে পারি?|may I take a photo?|ここでしゃしんをとってもいいですか。 (May I take a photo here?)|写真を撮ってもいいですか
+
+## Prohibitions | 2
+ここでたべてはいけません|koko de tabete wa ikemasen|এখানে খাওয়া যাবে না|you must not eat here|ここでたべてはいけません。 (You must not eat here.)|ここで食べてはいけません
+たばこをすってはいけません|tabako wo sutte wa ikemasen|ধূমপান করা যাবে না|you must not smoke|びょういんでたばこをすってはいけません。 (You must not smoke in a hospital.)|たばこを吸ってはいけません
+はしってはいけません|hashitte wa ikemasen|দৌড়ানো যাবে না|you must not run|ろうかをはしってはいけません。 (You must not run in the hallway.)|走ってはいけません
+
+## Past Polite Sentences | 2
+きのうたべました|kinou tabemashita|আমি গতকাল খেয়েছিলাম|I ate yesterday|きのうすしをたべました。 (I ate sushi yesterday.)|昨日食べました
+きのうはあめでした|kinou wa ame deshita|গতকাল বৃষ্টি ছিল|it rained yesterday|きのうはあめでした。 (It rained yesterday.)|昨日は雨でした
+ほんをよみませんでした|hon wo yomimasen deshita|আমি বই পড়িনি|I did not read the book|きのうほんをよみませんでした。 (I did not read a book yesterday.)|本を読みませんでした
+
+## Past Adjectives | 2
+おいしかったです|oishikatta desu|সুস্বাদু ছিল|it was delicious|ケーキはおいしかったです。 (The cake was delicious.)|美味しかったです
+たのしかったです|tanoshikatta desu|আনন্দের ছিল|it was fun|パーティーはたのしかったです。 (The party was fun.)|楽しかったです
+さむかったです|samukatta desu|ঠান্ডা ছিল|it was cold|きのうはさむかったです。 (It was cold yesterday.)|寒かったです
+
+## Things I Want To Do | 2
+みずがのみたいです|mizu ga nomitai desu|আমি পানি পান করতে চাই|I want to drink water|あついので、みずがのみたいです。 (It is hot, so I want water.)|水が飲みたいです
+にほんにいきたいです|nihon ni ikitai desu|আমি জাপানে যেতে চাই|I want to go to Japan|にほんにいきたいです。 (I want to go to Japan.)|日本に行きたいです
+やすみたいです|yasumitai desu|আমি বিশ্রাম নিতে চাই|I want to rest|つかれたので、やすみたいです。 (I am tired, so I want to rest.)|休みたいです
+
+## Making Plans | 2
+りょこうにいくつもりです|ryokou ni iku tsumori desu|আমি ভ্রমণে যাওয়ার পরিকল্পনা করছি|I plan to travel|なつにりょこうにいくつもりです。 (I plan to travel in summer.)|旅行に行くつもりです
+だいがくにはいります|daigaku ni hairimasu|আমি বিশ্ববিদ্যালয়ে ভর্তি হব|I will enter university|らいねんだいがくにはいります。 (I will enter university next year.)|大学に入ります
+しごとをさがします|shigoto wo sagashimasu|আমি চাকরি খুঁজব|I will look for a job|にほんでしごとをさがします。 (I will look for a job in Japan.)|仕事を探します
+
+## Weeks | 2
+こんしゅう|konshuu|এই সপ্তাহ|this week|こんしゅうはいそがしいです。 (This week is busy.)|今週
+らいしゅう|raishuu|পরের সপ্তাহ|next week|らいしゅうにほんにいきます。 (I go to Japan next week.)|来週
+せんしゅう|senshuu|গত সপ্তাহ|last week|せんしゅうテストがありました。 (There was a test last week.)|先週
+
+## Months and Years | 2
+らいげつ|raigetsu|পরের মাস|next month|らいげつけっこんします。 (I will marry next month.)|来月
+せんげつ|sengetsu|গত মাস|last month|せんげつにほんにきました。 (I came to Japan last month.)|先月
+ことし|kotoshi|এই বছর|this year|ことしはにじゅうさいです。 (I am twenty this year.)|今年
+
+## Years | 2
+らいねん|rainen|আগামী বছর|next year|らいねんそつぎょうします。 (I will graduate next year.)|来年
+きょねん|kyonen|গত বছর|last year|きょねんおおさかにいきました。 (I went to Osaka last year.)|去年
+まいとし|maitoshi|প্রতি বছর|every year|まいとしふじさんをみます。 (I see Mt. Fuji every year.)|毎年
+
+## Months 1 | 1
+いちがつ|ichigatsu|জানুয়ারি|January|いちがつはさむいです。 (January is cold.)|一月
+にがつ|nigatsu|ফেব্রুয়ারি|February|にがつにゆきがふります。 (It snows in February.)|二月
+さんがつ|sangatsu|মার্চ|March|さんがつにさくらがさきます。 (Cherry blossoms bloom in March.)|三月
+
+## Months 2 | 1
+しがつ|shigatsu|এপ্রিল|April|しがつにがっこうがはじまります。 (School starts in April.)|四月
+ごがつ|gogatsu|মে|May|ごがつはあたたかいです。 (May is warm.)|五月
+ろくがつ|rokugatsu|জুন|June|ろくがつはあめがおおいです。 (June has a lot of rain.)|六月
+
+## Months 3 | 1
+しちがつ|shichigatsu|জুলাই|July|しちがつはあついです。 (July is hot.)|七月
+はちがつ|hachigatsu|আগস্ট|August|はちがつにやすみがあります。 (There is a holiday in August.)|八月
+くがつ|kugatsu|সেপ্টেম্বর|September|くがつにたいふうがきます。 (Typhoons come in September.)|九月
+
+## Months 4 | 1
+じゅうがつ|juugatsu|অক্টোবর|October|じゅうがつはすずしいです。 (October is cool.)|十月
+じゅういちがつ|juuichigatsu|নভেম্বর|November|じゅういちがつにこうようがみえます。 (You can see autumn leaves in November.)|十一月
+じゅうにがつ|juunigatsu|ডিসেম্বর|December|じゅうにがつはいそがしいです。 (December is busy.)|十二月
+
+## Seasons | 1
+はる|haru|বসন্তকাল|spring|はるはあたたかいです。 (Spring is warm.)|春
+あき|aki|শরৎকাল|autumn|あきはすずしいです。 (Autumn is cool.)|秋
+ふゆ|fuyu|শীতকাল|winter|ふゆはゆきがふります。 (It snows in winter.)|冬
+
+## My Family | 2
+ちち|chichi|আমার বাবা (নিজের বাবার কথা বলতে)|my father|ちちはかいしゃいんです。 (My father is a company employee.)|父
+はは|haha|আমার মা (নিজের মায়ের কথা বলতে)|my mother|はははせんせいです。 (My mother is a teacher.)|母
+あね|ane|আমার বড় বোন|my older sister|あねはだいがくせいです。 (My older sister is a university student.)|姉
+
+## More Family | 2
+あに|ani|আমার বড় ভাই|my older brother|あにはとうきょうにすんでいます。 (My older brother lives in Tokyo.)|兄
+おとうと|otouto|ছোট ভাই|younger brother|おとうとはこうこうせいです。 (My younger brother is a high school student.)|弟
+いもうと|imouto|ছোট বোন|younger sister|いもうとはピアノをひきます。 (My younger sister plays the piano.)|妹
+
+## Relatives | 2
+おじさん|ojisan|চাচা বা মামা|uncle|おじさんはおおさかにいます。 (My uncle is in Osaka.)|叔父さん
+おばさん|obasan|খালা বা ফুফু|aunt|おばさんはやさしいです。 (My aunt is kind.)|叔母さん
+かぞくのしゃしん|kazoku no shashin|পরিবারের ছবি|family photo|かぞくのしゃしんをみせます。 (I show my family photo.)|家族の写真
+
+## Feeling Sick | 2
+かぜをひきました|kaze wo hikimashita|আমার সর্দি-জ্বর হয়েছে|I caught a cold|かぜをひきました。 (I caught a cold.)|風邪をひきました
+ねつがあります|netsu ga arimasu|জ্বর আছে|I have a fever|ねつがあります。 (I have a fever.)|熱があります
+あたまがいたいです|atama ga itai desu|আমার মাথা ব্যথা করছে|my head hurts|あたまがいたいです。 (I have a headache.)|頭が痛いです
+
+## Medicine | 2
+くすり|kusuri|ওষুধ|medicine|くすりをのみます。 (I take medicine.)|薬
+びょうき|byouki|অসুখ|illness|びょうきですから、やすみます。 (I am ill, so I will rest.)|病気
+けが|kega|আঘাত|injury|あしにけがをしました。 (I hurt my leg.)|怪我
+
+## Body Parts 3 | 2
+せなか|senaka|পিঠ|back|せなかがいたいです。 (My back hurts.)|背中
+むね|mune|বুক|chest|むねがくるしいです。 (My chest feels tight.)|胸
+ゆび|yubi|আঙুল|finger|ゆびをけがしました。 (I hurt my finger.)|指
+
+## Clothing | 2
+ふく|fuku|জামাকাপড়|clothes|あたらしいふくをかいます。 (I buy new clothes.)|服
+くつした|kutsushita|মোজা|socks|くつしたをはきます。 (I wear socks.)|靴下
+コート|kooto|কোট|coat|さむいので、コートをきます。 (It is cold, so I wear a coat.)
+
+## Shopping 2 | 2
+かいもの|kaimono|কেনাকাটা|shopping|かいものにいきます。 (I go shopping.)|買い物
+ねだん|nedan|দাম|price|ねだんがたかいです。 (The price is high.)|値段
+おつり|otsuri|খুচরা ফেরত|change|おつりをください。 (Please give me the change.)
+
+## Money | 2
+おかね|okane|টাকা|money|おかねがありません。 (I have no money.)|お金
+えん|en|ইয়েন|yen|ひゃくえんです。 (It is one hundred yen.)|円
+クレジットカード|kurejitto kaado|ক্রেডিট কার্ড|credit card|クレジットカードではらいます。 (I pay by credit card.)
+
+## Trains and Planes | 2
+でんしゃ|densha|ট্রেন|train|でんしゃがきました。 (The train has come.)|電車
+ちかてつ|chikatetsu|পাতালরেল|subway|ちかてつでいきます。 (I go by subway.)|地下鉄
+ひこうき|hikouki|বিমান|airplane|ひこうきでいきます。 (I go by airplane.)|飛行機
+
+## Roads | 2
+しんかんせん|shinkansen|বুলেট ট্রেন|bullet train|しんかんせんははやいです。 (The bullet train is fast.)|新幹線
+みち|michi|রাস্তা|road|このみちはせまいです。 (This road is narrow.)|道
+しんごう|shingou|ট্রাফিক সিগন্যাল|traffic light|しんごうがあかです。 (The traffic light is red.)|信号
+
+## Travel Preparations | 2
+りょかん|ryokan|জাপানি সরাইখানা|Japanese inn|りょかんにとまります。 (I stay at a ryokan.)|旅館
+パスポート|pasupooto|পাসপোর্ট|passport|パスポートをみせてください。 (Please show your passport.)
+よやく|yoyaku|আগাম বুকিং|reservation|ホテルをよやくしました。 (I booked a hotel.)|予約
+
+## Luggage and Directions | 2
+にもつ|nimotsu|মালপত্র|luggage|にもつがおもいです。 (The luggage is heavy.)|荷物
+こうさてん|kousaten|চৌরাস্তা|intersection|こうさてんをわたります。 (I cross the intersection.)|交差点
+ちず|chizu|মানচিত্র|map|ちずをみます。 (I look at the map.)|地図
+
+## At School | 2
+きょうしつ|kyoushitsu|শ্রেণিকক্ষ|classroom|きょうしつにはいります。 (I enter the classroom.)|教室
+じゅぎょう|jugyou|পাঠদান|lesson|じゅぎょうがはじまります。 (The lesson begins.)|授業
+しけん|shiken|পরীক্ষা|exam|あしたしけんがあります。 (There is an exam tomorrow.)|試験
+
+## Study Words | 2
+しつもん|shitsumon|প্রশ্ন|question|しつもんがあります。 (I have a question.)|質問
+こたえ|kotae|উত্তর|answer|こたえをかきます。 (I write the answer.)|答え
+じしょ|jisho|অভিধান|dictionary|じしょをつかいます。 (I use a dictionary.)|辞書
+
+## At Work 1 | 2
+しごと|shigoto|কাজ বা চাকরি|job|しごとがたのしいです。 (My job is fun.)|仕事
+かいぎ|kaigi|সভা|meeting|かいぎはごじからです。 (The meeting is from five.)|会議
+きゅうりょう|kyuuryou|বেতন|salary|きゅうりょうをもらいます。 (I receive a salary.)|給料
+
+## At Work 2 | 2
+やすみ|yasumi|ছুটি|holiday|あしたはやすみです。 (Tomorrow is a day off.)|休み
+しゅっちょう|shucchou|ব্যবসায়িক সফর|business trip|らいしゅうしゅっちょうします。 (I have a business trip next week.)|出張
+ざんぎょう|zangyou|ওভারটাইম|overtime|きょうはざんぎょうです。 (I work overtime today.)|残業
+
+## Inside a Building | 2
+たてもの|tatemono|ভবন|building|あのたてものはたかいです。 (That building is tall.)|建物
+かいだん|kaidan|সিঁড়ি|stairs|かいだんをのぼります。 (I climb the stairs.)|階段
+おふろ|ofuro|গোসল|bath|おふろにはいります。 (I take a bath.)|お風呂
+
+## Home Appliances | 2
+れいぞうこ|reizouko|ফ্রিজ|refrigerator|れいぞうこにみずがあります。 (There is water in the fridge.)|冷蔵庫
+せんたくき|sentakuki|ওয়াশিং মেশিন|washing machine|せんたくきがこわれました。 (The washing machine broke.)|洗濯機
+そうじき|soujiki|ভ্যাকুয়াম ক্লিনার|vacuum cleaner|そうじきをつかいます。 (I use a vacuum cleaner.)|掃除機
+
+## Housework | 2
+そうじします|souji shimasu|আমি ঘর পরিষ্কার করি|I clean|へやをそうじします。 (I clean the room.)|掃除します
+せんたくします|sentaku shimasu|আমি কাপড় ধুই|I do laundry|まいあさせんたくします。 (I do laundry every morning.)|洗濯します
+りょうりします|ryouri shimasu|আমি রান্না করি|I cook|ばんごはんをりょうりします。 (I cook dinner.)|料理します
+
+## Hobbies | 2
+しゅみ|shumi|শখ|hobby|しゅみはどくしょです。 (My hobby is reading.)|趣味
+おんがく|ongaku|সংগীত|music|おんがくがすきです。 (I like music.)|音楽
+えいが|eiga|সিনেমা|movie|えいがをみます。 (I watch a movie.)|映画
+
+## More Hobbies | 2
+りょうり|ryouri|রান্না|cooking|りょうりがじょうずです。 (I am good at cooking.)|料理
+どくしょ|dokusho|বই পড়া|reading|どくしょがすきです。 (I like reading.)|読書
+つり|tsuri|মাছ ধরা|fishing|かわでつりをします。 (I fish at the river.)|釣り
+
+## Fast and Slow | 2
+はやい|hayai|দ্রুত|fast|でんしゃははやいです。 (Trains are fast.)|速い
+おそい|osoi|ধীর|slow|バスはおそいです。 (The bus is slow.)|遅い
+つよい|tsuyoi|শক্তিশালী|strong|かれはつよいです。 (He is strong.)|強い
+
+## Heavy and Light | 2
+よわい|yowai|দুর্বল|weak|かぜでよわいです。 (I am weak from a cold.)|弱い
+おもい|omoi|ভারী|heavy|このかばんはおもいです。 (This bag is heavy.)|重い
+かるい|karui|হালকা|light|このかさはかるいです。 (This umbrella is light.)|軽い
+
+## Near and Far | 2
+ちかい|chikai|কাছে|near|えきはちかいです。 (The station is near.)|近い
+とおい|tooi|দূরে|far|うみはとおいです。 (The sea is far.)|遠い
+あかるい|akarui|উজ্জ্বল|bright|あかるいへやです。 (It is a bright room.)|明るい
+
+## Dark and Lively | 2
+くらい|kurai|অন্ধকার|dark|そとはくらいです。 (It is dark outside.)|暗い
+にぎやか|nigiyaka|প্রাণবন্ত|lively|にぎやかなまちです。 (It is a lively town.)|賑やか
+ひま|hima|অবসর|free time|きょうはひまです。 (I am free today.)|暇
+
+## Na-adjectives 1 | 2
+しずか|shizuka|শান্ত|quiet|しずかなへやです。 (It is a quiet room.)|静か
+きれい|kirei|সুন্দর বা পরিষ্কার|pretty or clean|きれいなはなです。 (It is a pretty flower.)|綺麗
+ゆうめい|yuumei|বিখ্যাত|famous|ゆうめいなおてらです。 (It is a famous temple.)|有名
+
+## Na-adjectives 2 | 2
+げんき|genki|সুস্থ ও প্রাণবন্ত|healthy and energetic|おばあさんはげんきです。 (My grandmother is healthy.)|元気
+すき|suki|পছন্দ|like|ねこがすきです。 (I like cats.)|好き
+きらい|kirai|অপছন্দ|dislike|ピーマンがきらいです。 (I dislike green peppers.)|嫌い
+
+## Na-adjectives 3 | 2
+じょうず|jouzu|দক্ষ|skillful|うたがじょうずです。 (I am good at singing.)|上手
+へた|heta|আনাড়ি|unskillful|えがへたです。 (I am bad at drawing.)|下手
+べんり|benri|সুবিধাজনক|convenient|このアプリはべんりです。 (This app is convenient.)|便利
+
+## Study and Teach | 2
+おしえます|oshiemasu|আমি শেখাই|teach|えいごをおしえます。 (I teach English.)|教えます
+ならいます|naraimasu|আমি শিখি|learn|ピアノをならいます。 (I learn the piano.)|習います
+おぼえます|oboemasu|আমি মনে রাখি|memorize|ことばをおぼえます。 (I memorize words.)|覚えます
+
+## Forget and Use | 2
+わすれます|wasuremasu|আমি ভুলে যাই|forget|かさをわすれました。 (I forgot my umbrella.)|忘れます
+さがします|sagashimasu|আমি খুঁজি|look for|かぎをさがします。 (I look for the key.)|探します
+つかいます|tsukaimasu|আমি ব্যবহার করি|use|パソコンをつかいます。 (I use a computer.)|使います
+
+## Open and Close | 2
+あけます|akemasu|আমি খুলি|open|まどをあけます。 (I open the window.)|開けます
+しめます|shimemasu|আমি বন্ধ করি|close|ドアをしめます。 (I close the door.)|閉めます
+つけます|tsukemasu|আমি চালু করি|turn on|でんきをつけます。 (I turn on the light.)|付けます
+
+## Turn Off and Wait | 2
+けします|keshimasu|আমি নিভিয়ে দিই|turn off|テレビをけします。 (I turn off the TV.)|消します
+まちます|machimasu|আমি অপেক্ষা করি|wait|バスをまちます。 (I wait for the bus.)|待ちます
+もちます|mochimasu|আমি হাতে ধরি|hold|かばんをもちます。 (I hold a bag.)|持ちます
+
+## Take and Send | 2
+とります|torimasu|আমি তুলে নিই|take|しゃしんをとります。 (I take a photo.)|取ります
+おくります|okurimasu|আমি পাঠাই|send|にもつをおくります。 (I send a package.)|送ります
+あげます|agemasu|আমি দিই|give|ともだちにプレゼントをあげます。 (I give a present to my friend.)|上げます
+
+## Receive and Lend | 2
+もらいます|moraimasu|আমি পাই|receive|はなをもらいました。 (I received flowers.)|貰います
+くれます|kuremasu|সে আমাকে দেয়|give to me|ともだちがほんをくれました。 (My friend gave me a book.)|呉れます
+かします|kashimasu|আমি ধার দিই|lend|ペンをかします。 (I lend a pen.)|貸します
+
+## Borrow and Help | 2
+かります|karimasu|আমি ধার নিই|borrow|ほんをかります。 (I borrow a book.)|借ります
+かえします|kaeshimasu|আমি ফেরত দিই|give back|ほんをかえします。 (I return the book.)|返します
+てつだいます|tetsudaimasu|আমি সাহায্য করি|help|ははをてつだいます。 (I help my mother.)|手伝います
+
+## If Sentences | 3
+あめがふったらいきません|ame ga futtara ikimasen|বৃষ্টি হলে আমি যাব না|if it rains I will not go|あめがふったら、いきません。 (If it rains, I will not go.)|あめがふったら、いきません,雨が降ったら、行きません,雨が降ったら行きません
+やすかったらかいます|yasukattara kaimasu|সস্তা হলে আমি কিনব|if it is cheap I will buy it|やすかったら、かいます。 (If it is cheap, I will buy it.)|やすかったら、かいます,安かったら、買います,安かったら買います
+ひまだったらあそびにきてください|hima dattara asobi ni kite kudasai|সময় থাকলে বেড়াতে আসুন|come visit if you are free|ひまだったら、あそびにきてください。 (Please come over if you are free.)|ひまだったら、あそびにきてください,暇だったら、遊びに来てください,暇だったら遊びに来てください
+
+## Giving Reasons | 3
+じかんがないからいきません|jikan ga nai kara ikimasen|সময় নেই তাই যাব না|I have no time so I will not go|じかんがないから、いきません。 (I have no time, so I will not go.)|じかんがないから、いきません,時間がないから、行きません,時間がないから行きません
+あついのでまどをあけます|atsui node mado wo akemasu|গরম লাগছে তাই জানালা খুলছি|it is hot so I open the window|あついので、まどをあけます。 (It is hot, so I will open the window.)|あついので、まどをあけます,暑いので、窓を開けます,暑いので窓を開けます
+びょうきだったのでやすみました|byouki datta node yasumimashita|অসুস্থ ছিলাম তাই ছুটি নিয়েছি|I was ill so I took a day off|びょうきだったので、やすみました。 (I was ill, so I took a day off.)|びょうきだったので、やすみました,病気だったので、休みました,病気だったので休みました
+
+## Can Do | 3
+およぐことができます|oyogu koto ga dekimasu|আমি সাঁতার কাটতে পারি|I can swim|わたしはおよぐことができます。 (I can swim.)|泳ぐことができます
+にほんごがはなせます|nihongo ga hanasemasu|আমি জাপানি বলতে পারি|I can speak Japanese|にほんごがはなせます。 (I can speak Japanese.)|日本語が話せます
+うんてんができます|unten ga dekimasu|আমি গাড়ি চালাতে পারি|I can drive|わたしはうんてんができます。 (I can drive.)|運転ができます
+
+## Have You Ever | 3
+にほんにいったことがあります|nihon ni itta koto ga arimasu|আমি জাপানে গিয়েছি|I have been to Japan|にほんにいったことがあります。 (I have been to Japan.)|日本に行ったことがあります
+すしをたべたことがあります|sushi wo tabeta koto ga arimasu|আমি সুশি খেয়েছি|I have eaten sushi|すしをたべたことがあります。 (I have eaten sushi.)|すしを食べたことがあります
+ふじさんにのぼったことがありません|fujisan ni nobotta koto ga arimasen|আমি ফুজি পর্বতে চড়িনি|I have never climbed Mt. Fuji|ふじさんにのぼったことがありません。 (I have never climbed Mt. Fuji.)|富士山に登ったことがありません
+
+## Giving Advice | 3
+きゅうけいしたほうがいいです|kyuukei shita hou ga ii desu|বিরতি নেওয়াই ভালো|you should take a break|きゅうけいしたほうがいいです。 (You should take a break.)|休憩したほうがいいです
+はやくねたほうがいいです|hayaku neta hou ga ii desu|তাড়াতাড়ি ঘুমানো ভালো|you should sleep early|はやくねたほうがいいです。 (You should sleep early.)|早く寝たほうがいいです
+くすりをのんだほうがいいです|kusuri wo nonda hou ga ii desu|ওষুধ খাওয়াই ভালো|you should take medicine|くすりをのんだほうがいいです。 (You should take medicine.)|薬を飲んだほうがいいです
+
+## Inviting | 3
+いっしょにいきませんか|issho ni ikimasen ka|আমাদের সঙ্গে যাবেন কি?|won't you go with me?|いっしょにいきませんか。 (Won't you go with me?)|一緒に行きませんか
+えいがをみにいきませんか|eiga wo mi ni ikimasen ka|সিনেমা দেখতে যাবেন কি?|shall we go see a movie?|えいがをみにいきませんか。 (Shall we go see a movie?)|映画を見に行きませんか
+うちにあそびにきてください|uchi ni asobi ni kite kudasai|আমার বাড়িতে বেড়াতে আসুন|please come visit my home|うちにあそびにきてください。 (Please come visit my home.)|家に遊びに来てください
+
+## On the Phone | 3
+もしもし|moshimoshi|হ্যালো (ফোনে)|hello (phone)|もしもし、たなかです。 (Hello, this is Tanaka.)
+でんわばんごう|denwa bangou|ফোন নম্বর|phone number|でんわばんごうをおしえてください。 (Please tell me your phone number.)|電話番号
+でんごんをおねがいします|dengon wo onegaishimasu|বার্তা রেখে দিন|please take a message|でんごんをおねがいします。 (Please take a message.)|伝言をお願いします
+
+## Natural Events | 3
+たいふう|taifuu|ঘূর্ণিঝড়|typhoon|たいふうがきます。 (A typhoon is coming.)|台風
+じしん|jishin|ভূমিকম্প|earthquake|じしんがありました。 (There was an earthquake.)|地震
+かじ|kaji|অগ্নিকাণ্ড|fire|かじです。にげてください。 (It is a fire. Please run away.)|火事
+
+## Daily Conversation | 3
+おげんきですか|ogenki desu ka|আপনি কেমন আছেন?|how are you?|おげんきですか。 (How are you?)|お元気ですか
+おかげさまで|okagesama de|আপনার দোয়ায়, ভালো আছি|thanks to you|はい、おかげさまで。 (Yes, thanks to you.)|お陰様で
+またあいましょう|mata aimashou|আবার দেখা হবে|let us meet again|また、あいましょう。 (Let us meet again.)|また、あいましょう,また、会いましょう,また会いましょう
