@@ -25,10 +25,6 @@ service cloud.firestore {
       return v is string && v.size() >= 2 && v.size() <= 60;
     }
 
-    function validPhone(v) {
-      return v is string && v.matches('^\\+?[0-9]{7,15}$');
-    }
-
     function validGender(v) {
       return v in ['Male', 'Female', 'Prefer not to say'];
     }
@@ -58,32 +54,34 @@ service cloud.firestore {
       // Profile created at sign-up. Only these fields, no score data.
       allow create: if isOwner(uid)
         && request.resource.data.keys().hasOnly([
-             'fullName', 'email', 'phone', 'gender',
+             'fullName', 'email', 'gender',
              'preferredLanguage', 'dailyGoal', 'acceptedTermsAt', 'createdAt'])
         && request.resource.data.keys().hasAll([
-             'fullName', 'email', 'phone', 'gender',
+             'fullName', 'email', 'gender',
              'preferredLanguage', 'dailyGoal', 'acceptedTermsAt', 'createdAt'])
         && validName(request.resource.data.fullName)
         && request.resource.data.email == request.auth.token.email.lower()
-        && validPhone(request.resource.data.phone)
         && validGender(request.resource.data.gender)
         && validLanguage(request.resource.data.preferredLanguage)
         && validGoal(request.resource.data.dailyGoal)
         && request.resource.data.createdAt == request.time
         && request.resource.data.acceptedTermsAt == request.time;
 
-      // Editable profile and settings fields only.
+      // Editable profile and settings fields only. 'phone' is no longer collected;
+      // an old value may be removed, but never changed or added.
       allow update: if isOwner(uid)
         && request.resource.data.diff(resource.data).affectedKeys()
              .hasOnly(['fullName', 'phone', 'gender', 'preferredLanguage', 'dailyGoal'])
+        && (!('phone' in request.resource.data)
+            || request.resource.data.phone == resource.data.phone)
         && validName(request.resource.data.fullName)
-        && validPhone(request.resource.data.phone)
         && validGender(request.resource.data.gender)
         && validLanguage(request.resource.data.preferredLanguage)
         && validGoal(request.resource.data.dailyGoal);
 
-      // Deleting the profile is done by the deleteAccountData function.
-      allow delete: if false;
+      // A user may delete their own profile (done when they delete their account).
+      // Progress data below stays write-protected.
+      allow delete: if isOwner(uid);
 
       // Server-written, owner-readable data.
       match /lessonProgress/{lessonId} {

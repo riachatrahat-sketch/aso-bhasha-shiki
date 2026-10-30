@@ -225,9 +225,12 @@ class SettingsScreen extends ConsumerWidget {
     try {
       // 1. Confirm the password first, so nothing is deleted on a wrong password.
       await auth.reauthenticate(password: typed);
-      // 2. Delete server data (profile, progress, scores).
+      // 2. Delete progress and scores.
       await ref.read(backendProvider).deleteAllData(uid);
-      // 3. Delete the sign-in account. The router then returns to the login screen.
+      // 3. Delete the profile document (name, email, gender). This must happen
+      //    while still signed in, so it comes before the account is removed.
+      await auth.deleteProfile(uid);
+      // 4. Delete the sign-in account. The router then returns to the login screen.
       await auth.finishDeleteAuthUser();
     } on AppException catch (e) {
       if (context.mounted) showMessage(context, e.message);

@@ -6,7 +6,6 @@ class UserProfile {
     required this.uid,
     required this.fullName,
     required this.email,
-    required this.phone,
     required this.gender,
     required this.preferredLanguage,
     required this.dailyGoal,
@@ -15,7 +14,6 @@ class UserProfile {
   final String uid;
   final String fullName;
   final String email;
-  final String phone;
   final String gender;
 
   /// 'en' or 'ja'.
@@ -41,7 +39,6 @@ class UserProfile {
         uid: uid,
         fullName: (m['fullName'] as String?) ?? '',
         email: (m['email'] as String?) ?? '',
-        phone: (m['phone'] as String?) ?? '',
         gender: (m['gender'] as String?) ?? 'Prefer not to say',
         preferredLanguage: (m['preferredLanguage'] as String?) ?? 'en',
         dailyGoal: (m['dailyGoal'] as num?)?.toInt() ?? 5,

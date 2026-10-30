@@ -68,8 +68,6 @@ class ProfileScreen extends ConsumerWidget {
               AppCard(
                 child: Column(
                   children: [
-                    _InfoRow(icon: Icons.phone_outlined, label: 'Mobile', value: profile?.phone ?? '-'),
-                    const Divider(),
                     _InfoRow(icon: Icons.wc_rounded, label: 'Gender', value: profile?.gender ?? '-'),
                     const Divider(),
                     _InfoRow(

@@ -21,7 +21,6 @@ class _EditProfileScreenState extends ConsumerState<EditProfileScreen> {
 
   final _formKey = GlobalKey<FormState>();
   final _name = TextEditingController();
-  final _phone = TextEditingController();
   String? _gender;
   bool _loaded = false;
   bool _saving = false;
@@ -29,7 +28,6 @@ class _EditProfileScreenState extends ConsumerState<EditProfileScreen> {
   @override
   void dispose() {
     _name.dispose();
-    _phone.dispose();
     super.dispose();
   }
 
@@ -40,7 +38,6 @@ class _EditProfileScreenState extends ConsumerState<EditProfileScreen> {
       await ref.read(authRepositoryProvider).updateProfile(
             uid,
             fullName: _name.text,
-            phone: _phone.text,
             gender: _gender!,
           );
       if (!mounted) return;
@@ -69,7 +66,6 @@ class _EditProfileScreenState extends ConsumerState<EditProfileScreen> {
           }
           if (!_loaded) {
             _name.text = profile.fullName;
-            _phone.text = profile.phone;
             _gender = _genders.contains(profile.gender) ? profile.gender : 'Prefer not to say';
             _loaded = true;
           }
@@ -95,13 +91,6 @@ class _EditProfileScreenState extends ConsumerState<EditProfileScreen> {
                         labelText: 'Email address',
                         helperText: 'Email cannot be changed here.',
                       ),
-                    ),
-                    const SizedBox(height: AppSpacing.md),
-                    TextFormField(
-                      controller: _phone,
-                      keyboardType: TextInputType.phone,
-                      decoration: const InputDecoration(labelText: 'Mobile number'),
-                      validator: Validators.phone,
                     ),
                     const SizedBox(height: AppSpacing.md),
                     DropdownButtonFormField<String>(

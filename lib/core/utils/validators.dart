@@ -19,16 +19,6 @@ class Validators {
     return null;
   }
 
-  /// Accepts an optional leading + and 7 to 15 digits. Spaces and dashes are ignored.
-  static String? phone(String? v) {
-    final s = (v ?? '').replaceAll(RegExp(r'[\s\-]'), '');
-    if (s.isEmpty) return 'Please enter your mobile number';
-    if (!RegExp(r'^\+?\d{7,15}$').hasMatch(s)) {
-      return 'Enter a valid mobile number (7-15 digits)';
-    }
-    return null;
-  }
-
   static String? gender(String? v) =>
       (v == null || v.isEmpty) ? 'Please select an option' : null;
 

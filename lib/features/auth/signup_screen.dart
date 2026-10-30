@@ -23,7 +23,6 @@ class _SignupScreenState extends ConsumerState<SignupScreen> {
   final _formKey = GlobalKey<FormState>();
   final _name = TextEditingController();
   final _email = TextEditingController();
-  final _phone = TextEditingController();
   final _password = TextEditingController();
   final _confirm = TextEditingController();
   String? _gender;
@@ -35,7 +34,6 @@ class _SignupScreenState extends ConsumerState<SignupScreen> {
   void dispose() {
     _name.dispose();
     _email.dispose();
-    _phone.dispose();
     _password.dispose();
     _confirm.dispose();
     super.dispose();
@@ -48,7 +46,6 @@ class _SignupScreenState extends ConsumerState<SignupScreen> {
       await ref.read(authRepositoryProvider).signUp(
             fullName: _name.text,
             email: _email.text,
-            phone: _phone.text,
             gender: _gender!,
             password: _password.text,
           );
@@ -91,18 +88,6 @@ class _SignupScreenState extends ConsumerState<SignupScreen> {
                 prefixIcon: Icon(Icons.mail_outline_rounded),
               ),
               validator: Validators.email,
-            ),
-            const SizedBox(height: AppSpacing.md),
-            TextFormField(
-              controller: _phone,
-              keyboardType: TextInputType.phone,
-              textInputAction: TextInputAction.next,
-              decoration: const InputDecoration(
-                labelText: 'Mobile number',
-                hintText: '+8801XXXXXXXXX',
-                prefixIcon: Icon(Icons.phone_outlined),
-              ),
-              validator: Validators.phone,
             ),
             const SizedBox(height: AppSpacing.md),
             DropdownButtonFormField<String>(

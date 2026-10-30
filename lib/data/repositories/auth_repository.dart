@@ -25,7 +25,6 @@ class AuthRepository {
   Future<void> signUp({
     required String fullName,
     required String email,
-    required String phone,
     required String gender,
     required String password,
   }) async {
@@ -41,7 +40,6 @@ class AuthRepository {
       await _db.collection('users').doc(user.uid).set({
         'fullName': fullName.trim(),
         'email': email.trim().toLowerCase(),
-        'phone': phone.replaceAll(RegExp(r'[\s\-]'), ''),
         'gender': gender,
         'preferredLanguage': 'en',
         'dailyGoal': 5,
@@ -113,20 +111,43 @@ class AuthRepository {
   // ---- Profile -----------------------------------------------------------
 
   Stream<UserProfile?> watchProfile(String uid) =>
-      _db.collection('users').doc(uid).snapshots().map(
-            (d) => d.exists ? UserProfile.fromMap(uid, d.data()!) : null,
-          );
+      _db.collection('users').doc(uid).snapshots().map((d) {
+        final data = d.data();
+        // The app no longer collects a phone number. Remove one saved by an
+        // older version (best effort, tried once per session).
+        if (data != null && data.containsKey('phone')) _removeLegacyPhone(uid);
+        return d.exists ? UserProfile.fromMap(uid, data!) : null;
+      });
+
+  final _phoneCleanupTried = <String>{};
+
+  void _removeLegacyPhone(String uid) {
+    if (!_phoneCleanupTried.add(uid)) return;
+    _db
+        .collection('users')
+        .doc(uid)
+        .update({'phone': FieldValue.delete()})
+        .catchError((Object _) {});
+  }
+
+  /// Deletes the profile document (name, email, gender, settings). Call this
+  /// while still signed in, before deleting the sign-in account.
+  Future<void> deleteProfile(String uid) async {
+    try {
+      await _db.collection('users').doc(uid).delete();
+    } on FirebaseException catch (e) {
+      throw AppException(_firestoreMessage(e));
+    }
+  }
 
   Future<void> updateProfile(
     String uid, {
     required String fullName,
-    required String phone,
     required String gender,
   }) async {
     try {
       await _db.collection('users').doc(uid).update({
         'fullName': fullName.trim(),
-        'phone': phone.replaceAll(RegExp(r'[\s\-]'), ''),
         'gender': gender,
       });
       await _auth.currentUser?.updateDisplayName(fullName.trim());

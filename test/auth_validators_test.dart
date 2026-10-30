@@ -25,18 +25,6 @@ void main() {
     });
   });
 
-  group('Validators.phone', () {
-    test('rejects bad numbers', () {
-      for (final bad in ['', 'abc', '12345', '+88017', '0171234567890123456']) {
-        expect(Validators.phone(bad), isNotNull, reason: bad);
-      }
-    });
-    test('accepts numbers with + spaces and dashes', () {
-      expect(Validators.phone('+880 1712-345678'), isNull);
-      expect(Validators.phone('01712345678'), isNull);
-    });
-  });
-
   group('Validators.password', () {
     test('requires 8+ characters with a letter and a number', () {
       expect(Validators.password(''), isNotNull);

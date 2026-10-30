@@ -14,7 +14,7 @@ class LegalScreen extends StatelessWidget {
 
   static const _privacy = <(String, String)>[
     ('What we collect',
-        'Your full name, email address, mobile number and gender (that you enter when you sign up), '
+        'Your full name, email address and gender (that you enter when you sign up), '
             'and your learning data: lesson progress, answers marked wrong, points, daily activity.'),
     ('How we use it',
         'To create your account, save your progress, show your statistics and let you sign in again. '
