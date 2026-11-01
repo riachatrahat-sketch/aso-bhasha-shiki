@@ -1,0 +1,146 @@
+// Japanese / MEXT Scholarship Vocabulary. Words for applying to and studying at a Japanese university.
+// Targets and example sentences are kana only; the kanji form is the last field.
+## University | 2
+だいがく|daigaku|বিশ্ববিদ্যালয়|university|だいがくでべんきょうします。 (I study at a university.)|大学
+だいがくいん|daigakuin|স্নাতকোত্তর বিদ্যালয়|graduate school|だいがくいんにはいりたいです。 (I want to enter graduate school.)|大学院
+けんきゅうしつ|kenkyuushitsu|গবেষণাগার|research lab|けんきゅうしつはにかいです。 (The research lab is on the second floor.)|研究室
+
+## Research | 2
+けんきゅう|kenkyuu|গবেষণা|research|けんきゅうがたのしいです。 (Research is fun.)|研究
+ろんぶん|ronbun|গবেষণাপত্র|thesis, paper|ろんぶんをかきます。 (I write a paper.)|論文
+じっけん|jikken|পরীক্ষা-নিরীক্ষা|experiment|じっけんをはじめます。 (I start the experiment.)|実験
+
+## Scholarship | 2
+しょうがくきん|shougakukin|বৃত্তির টাকা|scholarship|しょうがくきんをもらいます。 (I receive a scholarship.)|奨学金
+りゅうがくせい|ryuugakusei|বিদেশি শিক্ষার্থী|international student|わたしはりゅうがくせいです。 (I am an international student.)|留学生
+りゅうがく|ryuugaku|বিদেশে পড়াশোনা|study abroad|にほんにりゅうがくします。 (I will study abroad in Japan.)|留学
+
+## Applying | 2
+もうしこみ|moushikomi|আবেদন|application|もうしこみはきょうまでです。 (The application is until today.)|申し込み,申込み
+しょるい|shorui|কাগজপত্র|documents|しょるいをだします。 (I submit the documents.)|書類
+しめきり|shimekiri|শেষ তারিখ|deadline|しめきりはらいしゅうです。 (The deadline is next week.)|締め切り,締切
+
+## Admission | 2
+にゅうがく|nyuugaku|ভর্তি হওয়া|admission|あしたにゅうがくしきがあります。 (There is an entrance ceremony tomorrow.)|入学
+そつぎょう|sotsugyou|স্নাতক হওয়া|graduation|らいねんそつぎょうします。 (I will graduate next year.)|卒業
+ごうかく|goukaku|উত্তীর্ণ হওয়া|passing an exam|しけんにごうかくしました。 (I passed the exam.)|合格
+
+## Interview | 2
+めんせつ|mensetsu|সাক্ষাৎকার (ইন্টারভিউ)|interview|あしたはめんせつです。 (Tomorrow is the interview.)|面接
+じこしょうかい|jikoshoukai|নিজের পরিচয় দেওয়া|self-introduction|じこしょうかいをします。 (I give a self-introduction.)|自己紹介
+しぼうどうき|shiboudouki|আবেদনের কারণ|reason for applying|しぼうどうきをかきます。 (I write my reason for applying.)|志望動機
+
+## Embassy and Visa | 2
+たいしかん|taishikan|দূতাবাস|embassy|たいしかんにいきます。 (I go to the embassy.)|大使館
+ビザ|biza|ভিসা|visa|ビザをとります。 (I get a visa.)
+ざいりゅうカード|zairyuukaado|বসবাসের কার্ড|residence card|ざいりゅうカードをもっています。 (I have a residence card.)|在留カード
+
+## Living in Japan 1 | 2
+りょう|ryou|ছাত্রাবাস|dormitory|りょうにすんでいます。 (I live in a dormitory.)|寮
+やちん|yachin|বাসা ভাড়া|rent|やちんがたかいです。 (The rent is high.)|家賃
+ひっこし|hikkoshi|বাসা বদল|moving house|らいしゅうひっこしします。 (I move house next week.)|引っ越し,引越し
+
+## Living in Japan 2 | 2
+しょくどう|shokudou|ক্যান্টিন|cafeteria|しょくどうでひるごはんをたべます。 (I eat lunch at the cafeteria.)|食堂
+じむしょ|jimusho|অফিস কক্ষ|office|じむしょにいってください。 (Please go to the office.)|事務所
+じゅうしょ|juusho|ঠিকানা|address|じゅうしょをかいてください。 (Please write your address.)|住所
+
+## Procedures | 2
+こうざ|kouza|ব্যাংক অ্যাকাউন্ট|bank account|ぎんこうでこうざをつくります。 (I open an account at the bank.)|口座
+ほけん|hoken|বিমা|insurance|ほけんにはいります。 (I join the insurance.)|保険
+てつづき|tetsuzuki|আনুষ্ঠানিক প্রক্রিয়া|procedure|てつづきがおわりました。 (The procedure is finished.)|手続き,手続
+
+## Teachers | 3
+きょうじゅ|kyouju|অধ্যাপক|professor|きょうじゅにそうだんします。 (I consult the professor.)|教授
+しどうきょうかん|shidoukyoukan|তত্ত্বাবধায়ক শিক্ষক|academic supervisor|しどうきょうかんはやさしいです。 (My supervisor is kind.)|指導教官
+ゼミ|zemi|সেমিনার ক্লাস|seminar|ゼミではっぴょうします。 (I give a presentation in the seminar.)
+
+## Classes | 3
+こうぎ|kougi|বক্তৃতা ক্লাস|lecture|こうぎはおもしろいです。 (The lecture is interesting.)|講義
+レポート|repooto|প্রতিবেদন|report|レポートをかきます。 (I write a report.)
+しりょう|shiryou|তথ্যসামগ্রী|materials|しりょうをよみます。 (I read the materials.)|資料
+
+## Subjects 1 | 3
+けいざい|keizai|অর্থনীতি|economics|けいざいをべんきょうしています。 (I am studying economics.)|経済
+ほうりつ|houritsu|আইন|law|ほうりつはむずかしいです。 (Law is difficult.)|法律
+いがく|igaku|চিকিৎসাবিজ্ঞান|medicine|いがくをべんきょうします。 (I study medicine.)|医学
+
+## Subjects 2 | 3
+こうがく|kougaku|প্রকৌশল|engineering|こうがくがすきです。 (I like engineering.)|工学
+のうぎょう|nougyou|কৃষি|agriculture|のうぎょうのけんきゅうをします。 (I do research on agriculture.)|農業
+きょういく|kyouiku|শিক্ষা|education|きょういくはたいせつです。 (Education is important.)|教育
+
+## Subjects 3 | 3
+れきし|rekishi|ইতিহাস|history|れきしのほんをよみます。 (I read a history book.)|歴史
+ぶんがく|bungaku|সাহিত্য|literature|ぶんがくがすきです。 (I like literature.)|文学
+かがく|kagaku|বিজ্ঞান|science|かがくのじゅぎょうがあります。 (There is a science class.)|科学
+
+## Study Habits | 3
+ふくしゅう|fukushuu|পুনরায় পড়া|review|まいにちふくしゅうします。 (I review every day.)|復習
+よしゅう|yoshuu|আগে থেকে পড়া|preparation|じゅぎょうのまえによしゅうします。 (I prepare before class.)|予習
+もくひょう|mokuhyou|লক্ষ্য|goal|もくひょうをきめます。 (I decide on a goal.)|目標
+
+## Dreams | 3
+ゆめ|yume|স্বপ্ন|dream|ゆめはいしゃになることです。 (My dream is to become a doctor.)|夢
+しょうらい|shourai|ভবিষ্যৎ|future|しょうらいがたのしみです。 (I look forward to the future.)|将来
+かんしゃ|kansha|কৃতজ্ঞতা|gratitude|かんしゃしています。 (I am grateful.)|感謝
+
+## Where I Am From | 3
+こくせき|kokuseki|জাতীয়তা|nationality|こくせきはバングラデシュです。 (My nationality is Bangladeshi.)|国籍
+しゅっしん|shusshin|জন্মস্থান|hometown, origin|しゅっしんはダッカです。 (I am from Dhaka.)|出身
+ぼこくご|bokokugo|মাতৃভাষা|mother tongue|ぼこくごはベンガルごです。 (My mother tongue is Bengali.)|母国語
+
+## Culture | 3
+ぶんか|bunka|সংস্কৃতি|culture|にほんのぶんかにきょうみがあります。 (I am interested in Japanese culture.)|文化
+でんとう|dentou|ঐতিহ্য|tradition|でんとうをたいせつにします。 (We value tradition.)|伝統
+れいぎ|reigi|শিষ্টাচার|manners|れいぎがただしいです。 (His manners are correct.)|礼儀
+
+## Time and Plans | 3
+きかん|kikan|সময়কাল|period|きかんはにねんです。 (The period is two years.)|期間
+にってい|nittei|সময়সূচি|schedule|にっていをおしえてください。 (Please tell me the schedule.)|日程
+ていしゅつ|teishutsu|জমা দেওয়া|submission|ていしゅつはあしたです。 (The submission is tomorrow.)|提出
+
+## Exams | 3
+もんだい|mondai|পরীক্ষার প্রশ্ন|question, problem|もんだいがむずかしいです。 (The question is difficult.)|問題
+かいとう|kaitou|উত্তর লেখা|answer|かいとうをかきます。 (I write the answer.)|解答
+てんすう|tensuu|নম্বর|score|てんすうがよかったです。 (The score was good.)|点数
+
+## Language Study | 3
+ぶんぽう|bunpou|ব্যাকরণ|grammar|ぶんぽうをべんきょうします。 (I study grammar.)|文法
+たんご|tango|শব্দ|vocabulary word|たんごをおぼえます。 (I memorize words.)|単語
+はつおん|hatsuon|উচ্চারণ|pronunciation|はつおんがじょうずです。 (Your pronunciation is good.)|発音
+
+## Language Study 2 | 3
+かんじ|kanji|চীনা অক্ষর|kanji|かんじをかきます。 (I write kanji.)|漢字
+ひょうげん|hyougen|অভিব্যক্তি|expression|あたらしいひょうげんをおぼえます。 (I learn a new expression.)|表現
+いみ|imi|অর্থ|meaning|このことばのいみをおしえてください。 (Please tell me the meaning of this word.)|意味
+
+## Communication | 3
+そうだん|soudan|পরামর্শ চাওয়া|consultation|せんせいにそうだんします。 (I consult my teacher.)|相談
+れんらく|renraku|যোগাযোগ করা|contact|あとでれんらくします。 (I will contact you later.)|連絡
+しょうかい|shoukai|পরিচয় করানো|introduction|ともだちをしょうかいします。 (I introduce a friend.)|紹介
+
+## Opinions | 3
+いけん|iken|মতামত|opinion|いけんをいいます。 (I give my opinion.)|意見
+りゆう|riyuu|কারণ|reason|りゆうをせつめいします。 (I explain the reason.)|理由
+ほうほう|houhou|উপায়|method|いいほうほうをかんがえます。 (I think of a good method.)|方法
+
+## Society | 3
+しゃかい|shakai|সমাজ|society|しゃかいのもんだいをかんがえます。 (I think about social problems.)|社会
+せいふ|seifu|সরকার|government|せいふがはっぴょうしました。 (The government announced it.)|政府
+かんきょう|kankyou|পরিবেশ|environment|かんきょうをまもります。 (We protect the environment.)|環境
+
+## Technology | 3
+ぎじゅつ|gijutsu|প্রযুক্তি|technology|にほんのぎじゅつはすごいです。 (Japan's technology is amazing.)|技術
+じょうほう|jouhou|তথ্য|information|じょうほうをあつめます。 (I collect information.)|情報
+かいはつ|kaihatsu|উন্নয়ন করা|development|あたらしいせいひんをかいはつします。 (We develop a new product.)|開発
+
+## Working Together | 3
+こうりゅう|kouryuu|আদান-প্রদান|exchange|こくさいこうりゅうがさかんです。 (International exchange is active.)|交流
+ボランティア|borantia|স্বেচ্ছাসেবা|volunteer|ボランティアにさんかします。 (I take part in volunteering.)
+ちいき|chiiki|এলাকা|local area|ちいきのまつりにいきます。 (I go to the local festival.)|地域
+
+## Growing | 3
+どりょく|doryoku|প্রচেষ্টা|effort|どりょくがたいせつです。 (Effort is important.)|努力
+せいちょう|seichou|বৃদ্ধি|growth|せいちょうをかんじます。 (I feel my growth.)|成長
+ちょうせん|chousen|চ্যালেঞ্জ|challenge|あたらしいことにちょうせんします。 (I take on a new challenge.)|挑戦

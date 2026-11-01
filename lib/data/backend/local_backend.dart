@@ -135,7 +135,7 @@ class LocalBackend implements LearningBackend {
     );
 
     if (!eval.correct) {
-      final item = lesson.items[req.index];
+      final item = lesson.items[lesson.taskFor(req.activity, req.index).item];
       state.mistakes.add(Mistake(
         id: '${_clock().microsecondsSinceEpoch}',
         lessonId: lesson.id,

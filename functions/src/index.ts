@@ -17,7 +17,7 @@ import {
   questionKey,
   scoreTxId,
 } from './engine';
-import { AzureScores, Lesson, evaluate } from './evaluate';
+import { AzureScores, Lesson, evaluate, expectedAnswer, taskFor } from './evaluate';
 import { Policy, mergePolicy } from './policy';
 
 initializeApp();
@@ -181,7 +181,7 @@ export const submitAttempt = onCall(
       try {
         azure = await assessPronunciation({
           audio: Buffer.from(req.audioBase64, 'base64'),
-          referenceText: lesson.items[req.index].target,
+          referenceText: expectedAnswer(lesson, 'speaking', req.index),
           locale: TTS_LOCALE[lesson.language] ?? 'en-US',
           key: secret,
           region: azureRegion.value(),
@@ -290,7 +290,7 @@ export const submitAttempt = onCall(
           lessonId: lesson.id,
           activity: req.activity,
           index: req.index,
-          prompt: lesson.items[req.index].target,
+          prompt: lesson.items[taskFor(lesson, req.activity, req.index).item].target,
           expected: ev.correctAnswer,
           given: ev.heard.slice(0, 200),
           at: FieldValue.serverTimestamp(),

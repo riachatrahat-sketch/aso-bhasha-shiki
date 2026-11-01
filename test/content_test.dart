@@ -16,8 +16,8 @@ void main() {
     catalog = LessonCatalog.fromJson(jsonDecode(raw) as Map<String, dynamic>);
   });
 
-  test('there are at least 3000 tasks (lessons x 9 questions)', () {
-    expect(catalog.lessons.length * 9, greaterThanOrEqualTo(3000));
+  test('there are at least 3900 tasks (lessons x 9 questions)', () {
+    expect(catalog.lessons.length * 9, greaterThanOrEqualTo(3900));
   });
 
   test('lesson ids are unique and every lesson has exactly three items', () {
@@ -84,14 +84,36 @@ void main() {
     }
   });
 
-  test('every listening question has four distinct options including the answer', () {
+  test('every listening question has distinct options including the answer', () {
     for (final lesson in catalog.lessons) {
+      final expectedCount = lesson.tier >= 4 ? 5 : 4;
       for (var i = 0; i < 3; i++) {
         final q = catalog.listeningQuestion(lesson, i);
-        expect(q.options, hasLength(4), reason: '${lesson.id} #$i');
-        expect(q.options.toSet(), hasLength(4), reason: '${lesson.id} #$i');
+        expect(q.options, hasLength(expectedCount), reason: '${lesson.id} #$i');
+        expect(q.options.toSet(), hasLength(expectedCount), reason: '${lesson.id} #$i');
         expect(q.options, contains(q.correct), reason: '${lesson.id} #$i');
       }
     }
+  });
+
+  test('kids levels exist for both languages and have a picture on every word', () {
+    for (final language in catalog.languages) {
+      final kids = language.levels.where((l) => l.isKids).toList();
+      expect(kids, isNotEmpty, reason: language.id);
+      for (final level in kids) {
+        final lessons = catalog.lessonsFor(language.id, levelId: level.id);
+        expect(lessons, isNotEmpty, reason: '${language.id}/${level.id}');
+        for (final lesson in lessons) {
+          for (final item in lesson.items) {
+            expect(item.emoji, isNotNull, reason: item.target);
+          }
+        }
+      }
+    }
+  });
+
+  test('IELTS and MEXT vocabulary levels have lessons', () {
+    expect(catalog.lessonsFor('en', levelId: 'ielts'), isNotEmpty);
+    expect(catalog.lessonsFor('ja', levelId: 'mext'), isNotEmpty);
   });
 }

@@ -247,6 +247,32 @@ class HomeScreen extends ConsumerWidget {
               ),
             ),
           const SizedBox(height: AppSpacing.lg),
+
+          // Games
+          const SectionTitle('Play and learn'),
+          const SizedBox(height: AppSpacing.sm),
+          AppCard(
+            onTap: () => context.push(Routes.games),
+            child: Row(
+              children: [
+                const Text('🎮', style: TextStyle(fontSize: 36)),
+                const SizedBox(width: AppSpacing.md),
+                Expanded(
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      Text('Word Match game',
+                          style: text.titleMedium?.copyWith(fontWeight: FontWeight.w700)),
+                      Text('Match words, sounds and meanings. Beat the clock and win stars.',
+                          style: text.bodySmall),
+                    ],
+                  ),
+                ),
+                const Icon(Icons.arrow_forward_rounded),
+              ],
+            ),
+          ),
+          const SizedBox(height: AppSpacing.lg),
         ],
       ),
     );

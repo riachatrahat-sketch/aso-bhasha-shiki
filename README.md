@@ -1,24 +1,38 @@
-# Aso Bhasha Shiki
+# Esho Bhasha Shikhi
 
 Free English and Japanese learning app (Bengali-speaking learners).
 Flutter + Firebase (Auth, Firestore, Cloud Functions).
 
-**Status:** the Dart code has not been compiled or run by the author of this
-scaffold (no Flutter SDK was available). Run `flutter pub get`, `flutter analyze`
-and `flutter test` first and fix whatever they report.
+**Status:** analysed and tested by GitHub Actions (`.github/workflows/ci.yml`).
 
 ## Features
 - Email/password auth with verification and password reset; Firestore profile.
-- 2 languages (English, Japanese), 336 lessons = 3,024 tasks in `assets/content/lessons.json`
-  (English Beginner to Advanced; Japanese Hiragana, Katakana, JLPT N5 and N4).
+- 2 languages and 439 lessons = 3,951 tasks in `assets/content/lessons.json`.
+  - English: Kids Starter, Beginner, Elementary, Intermediate, Advanced, IELTS Vocabulary.
+  - Japanese: Kids Starter, Hiragana, Katakana, JLPT N5, JLPT N4, MEXT Scholarship Vocabulary.
+  - Kids levels use big emoji pictures and very simple words; the level screen groups levels
+    into "Kids" and "Teens and adults".
   Lessons are written in simple text files under `tools/content/` and built into the JSON
   with `python3 tools/build_lessons.py`, which also checks the content for mistakes.
   Content is AI-written; a native Bengali/Japanese speaker should review it.
-- 3 activities per lesson, 3 questions each: Speaking, Listening, Writing.
+- 3 activities per lesson, 3 questions each, and the questions are **not all the same**:
+  - Speaking: read a word aloud, say a word from its Bengali meaning, read a whole sentence.
+  - Listening: hear a word and pick its meaning or spelling; hear a sentence and pick the
+    missing or used word.
+  - Writing: dictation, translate Bengali to the word, fill the blank in a sentence,
+    put the words of a sentence in order, type a whole sentence you hear.
+  - Speaking, Listening and Writing start on different words, so one sentence is not repeated.
+- Lessons get harder as you go: every lesson has a `tier` (1-5) that rises inside a level and
+  from level to level. Early tiers use easy "copy what you hear" questions; later tiers use
+  translation, sentences, fill-in-the-blank and word order, and 5 listening options.
+  The build script writes the plan to each lesson's `tasks` field; the app and the Cloud
+  Function only read it.
+- Word Match game (Home > Play and learn): 30 levels per word set (English or Japanese,
+  Kids / general / IELTS / MEXT). Match words with meanings, sounds or English definitions
+  against the clock; more pairs and less time on every level; stars saved on the device.
 - Scoring: +0.5 per correct question (once), -1 on the first wrong attempt of a
   question, no skipping, questions unlock in order, retry never duplicates points.
 - Progress charts, mistakes list, streak, profile, settings, account deletion.
-- Optional ML Kit face/mouth-movement assist (never affects the score, video not saved).
 - Optional Azure pronunciation assessment through a Cloud Function.
 
 ## Architecture
@@ -28,7 +42,7 @@ lib/
   data/        models, lesson catalog, backends (Firebase / Local), auth repo
   domain/      scoring engine, progression, evaluator, picker, insights
   features/    screens
-  services/    TTS, speech-to-text, recorder, face tracker
+  services/    TTS, speech-to-text, recorder
 functions/     Cloud Functions (TypeScript): submitAttempt, deleteAccountData
 firestore.rules
 ```
@@ -73,10 +87,10 @@ cd functions && npm test
 ```
 Dart tests: validators, normalization, scoring, duplicate prevention, unlock
 order, lesson completion, streak, speech matching, local backend flow.
-The TypeScript logic tests (19) passed when written; the Dart tests were not run.
+The Dart tests run in GitHub Actions on every push (see below).
 
 ## Known gaps
-- Listening "spoken answer" type not implemented (multiple choice only).
+- Listening is multiple choice only.
 - Reminder notifications: preference flag only.
 - Firestore rules and `submitAttempt` not tested on the emulator.
 - Package versions in `pubspec.yaml` are unverified.

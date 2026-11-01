@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
-import 'package:permission_handler/permission_handler.dart';
 
 import '../../core/router/app_router.dart';
 import '../../core/theme/app_tokens.dart';
@@ -126,11 +125,6 @@ class SettingsScreen extends ConsumerWidget {
           ),
           const SizedBox(height: AppSpacing.lg),
 
-          const SectionTitle('Permissions'),
-          const SizedBox(height: AppSpacing.sm),
-          const AppCard(child: _CameraPermissionRow()),
-          const SizedBox(height: AppSpacing.lg),
-
           const SectionTitle('Legal'),
           const SizedBox(height: AppSpacing.sm),
           AppCard(
@@ -235,67 +229,5 @@ class SettingsScreen extends ConsumerWidget {
     } on AppException catch (e) {
       if (context.mounted) showMessage(context, e.message);
     }
-  }
-}
-
-class _CameraPermissionRow extends StatefulWidget {
-  const _CameraPermissionRow();
-
-  @override
-  State<_CameraPermissionRow> createState() => _CameraPermissionRowState();
-}
-
-class _CameraPermissionRowState extends State<_CameraPermissionRow> with WidgetsBindingObserver {
-  PermissionStatus? _status;
-
-  @override
-  void initState() {
-    super.initState();
-    WidgetsBinding.instance.addObserver(this);
-    _refresh();
-  }
-
-  @override
-  void dispose() {
-    WidgetsBinding.instance.removeObserver(this);
-    super.dispose();
-  }
-
-  /// Re-read the status when the user comes back from the system settings.
-  @override
-  void didChangeAppLifecycleState(AppLifecycleState state) {
-    if (state == AppLifecycleState.resumed) _refresh();
-  }
-
-  Future<void> _refresh() async {
-    final s = await Permission.camera.status;
-    if (mounted) setState(() => _status = s);
-  }
-
-  @override
-  Widget build(BuildContext context) {
-    final granted = _status?.isGranted == true;
-    return Row(
-      children: [
-        Icon(granted ? Icons.videocam_rounded : Icons.videocam_off_rounded,
-            color: granted ? AppColors.writing : AppColors.purple),
-        const SizedBox(width: AppSpacing.md),
-        Expanded(
-          child: Column(
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: [
-              Text('Camera', style: Theme.of(context).textTheme.titleSmall),
-              Text(
-                _status == null
-                    ? 'Checking...'
-                    : (granted ? 'Allowed (used only for camera assist)' : 'Not allowed'),
-                style: Theme.of(context).textTheme.bodySmall,
-              ),
-            ],
-          ),
-        ),
-        TextButton(onPressed: openAppSettings, child: const Text('Manage')),
-      ],
-    );
   }
 }

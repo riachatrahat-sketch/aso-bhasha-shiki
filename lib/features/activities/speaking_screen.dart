@@ -8,23 +8,20 @@ import '../../core/config/app_config.dart';
 import '../../core/theme/app_tokens.dart';
 import '../../core/widgets/app_card.dart';
 import '../../core/widgets/audio_buttons.dart';
-import '../../core/widgets/state_views.dart';
 import '../../data/models/lesson.dart';
 import '../../services/audio_recorder_service.dart';
-import '../../services/face_tracker_service.dart';
 import '../../services/speech_service.dart';
 import 'activity_shell.dart';
-import 'face_assist_panel.dart';
 
-/// Reading & Speaking, with optional camera assist.
+/// Speaking practice. Three kinds of question (see [TaskKind]):
+/// read a word aloud, say a word from its Bengali meaning, read a sentence aloud.
 ///
-/// The screen owns the microphone, recorder and camera services so they
-/// survive question changes and are always released in [dispose].
+/// The screen owns the microphone and recorder so they survive question
+/// changes and are always released in [dispose].
 class SpeakingScreen extends ConsumerStatefulWidget {
-  const SpeakingScreen({super.key, required this.lessonId, this.startWithCamera = false});
+  const SpeakingScreen({super.key, required this.lessonId});
 
   final String lessonId;
-  final bool startWithCamera;
 
   @override
   ConsumerState<SpeakingScreen> createState() => _SpeakingScreenState();
@@ -33,56 +30,12 @@ class SpeakingScreen extends ConsumerStatefulWidget {
 class _SpeakingScreenState extends ConsumerState<SpeakingScreen> {
   final _speech = SpeechService();
   final _recorder = AudioRecorderService();
-  final _tracker = FaceTrackerService();
-
-  bool _cameraOn = false;
-  bool _cameraStarting = false;
-
-  @override
-  void initState() {
-    super.initState();
-    if (widget.startWithCamera) {
-      WidgetsBinding.instance.addPostFrameCallback((_) => _setCamera(true));
-    }
-  }
 
   @override
   void dispose() {
     _speech.dispose();
     _recorder.dispose();
-    _tracker.dispose();
     super.dispose();
-  }
-
-  Future<void> _setCamera(bool on) async {
-    if (!on) {
-      await _tracker.stop();
-      if (mounted) setState(() => _cameraOn = false);
-      return;
-    }
-    setState(() => _cameraStarting = true);
-    final result = await _tracker.start();
-    if (!mounted) return;
-    setState(() {
-      _cameraStarting = false;
-      _cameraOn = result == FaceStartResult.started;
-    });
-    switch (result) {
-      case FaceStartResult.started:
-        break;
-      case FaceStartResult.permissionDenied:
-        showMessage(context, 'Camera permission was denied. Speaking works without the camera.');
-      case FaceStartResult.permissionPermanentlyDenied:
-        _askOpenSettings(
-          'Camera access is blocked',
-          'Allow the camera in your phone settings to use camera assist. '
-              'Speaking still works without it.',
-        );
-      case FaceStartResult.noCamera:
-        showMessage(context, 'No camera found on this device.');
-      case FaceStartResult.failed:
-        showMessage(context, 'Could not start the camera.');
-    }
   }
 
   Future<void> _askOpenSettings(String title, String body) {
@@ -114,10 +67,6 @@ class _SpeakingScreenState extends ConsumerState<SpeakingScreen> {
         q: q,
         speech: _speech,
         recorder: _recorder,
-        tracker: _tracker,
-        cameraOn: _cameraOn,
-        cameraStarting: _cameraStarting,
-        onCamera: _setCamera,
         onOpenSettings: _askOpenSettings,
       ),
     );
@@ -131,20 +80,12 @@ class _SpeakingBody extends ConsumerStatefulWidget {
     required this.q,
     required this.speech,
     required this.recorder,
-    required this.tracker,
-    required this.cameraOn,
-    required this.cameraStarting,
-    required this.onCamera,
     required this.onOpenSettings,
   });
 
   final QuestionContext q;
   final SpeechService speech;
   final AudioRecorderService recorder;
-  final FaceTrackerService tracker;
-  final bool cameraOn;
-  final bool cameraStarting;
-  final Future<void> Function(bool on) onCamera;
   final Future<void> Function(String title, String body) onOpenSettings;
 
   @override
@@ -155,9 +96,11 @@ class _SpeakingBodyState extends ConsumerState<_SpeakingBody> {
   _Phase _phase = _Phase.idle;
   String _partial = '';
   String? _problem;
-  FaceActivitySummary? _faceSummary;
   Timer? _maxTimer;
   bool _sawListening = false;
+
+  /// "Need a hint?" was pressed on a translate question.
+  bool _hintShown = false;
 
   bool get _azure => AppConfig.pronunciation == PronunciationMode.azure;
 
@@ -193,7 +136,6 @@ class _SpeakingBodyState extends ConsumerState<_SpeakingBody> {
     setState(() {
       _problem = null;
       _partial = '';
-      _faceSummary = null;
     });
 
     if (_azure) {
@@ -230,8 +172,9 @@ class _SpeakingBodyState extends ConsumerState<_SpeakingBody> {
       );
     }
 
-    if (widget.cameraOn) widget.tracker.beginWindow();
-    _maxTimer = Timer(const Duration(seconds: 15), _stop);
+    // Sentences take longer to say than single words.
+    final seconds = widget.q.kind == TaskKind.sentenceSpeak ? 25 : 15;
+    _maxTimer = Timer(Duration(seconds: seconds), _stop);
     if (mounted) setState(() => _phase = _Phase.listening);
   }
 
@@ -249,12 +192,9 @@ class _SpeakingBodyState extends ConsumerState<_SpeakingBody> {
     _maxTimer?.cancel();
     setState(() => _phase = _Phase.processing);
 
-    final summary = widget.cameraOn ? widget.tracker.endWindow() : null;
-
     if (_azure) {
       final audio = await widget.recorder.stopAsBase64();
       if (!mounted) return;
-      setState(() => _faceSummary = summary);
       if (audio == null) {
         setState(() {
           _phase = _Phase.idle;
@@ -266,10 +206,110 @@ class _SpeakingBodyState extends ConsumerState<_SpeakingBody> {
     } else {
       final heard = await widget.speech.stop();
       if (!mounted) return;
-      setState(() => _faceSummary = summary);
       await widget.q.submit(transcript: heard);
     }
     if (mounted) setState(() => _phase = _Phase.idle);
+  }
+
+  /// The card that tells the learner what to say.
+  Widget _promptCard(BuildContext context) {
+    final q = widget.q;
+    final item = q.item;
+    final text = Theme.of(context).textTheme;
+    final emoji = item.emoji;
+    final languageName = q.language.name;
+
+    Widget emojiView() => emoji == null
+        ? const SizedBox.shrink()
+        : Padding(
+            padding: const EdgeInsets.only(bottom: AppSpacing.sm),
+            child: Text(emoji, style: const TextStyle(fontSize: 56)),
+          );
+
+    switch (q.kind) {
+      case TaskKind.translateSpeak:
+        return AppCard(
+          child: Column(
+            children: [
+              Text('Say this in $languageName',
+                  style: text.labelLarge?.copyWith(color: AppColors.speaking)),
+              const SizedBox(height: AppSpacing.sm),
+              emojiView(),
+              Text(item.meaningBn,
+                  textAlign: TextAlign.center,
+                  style: text.headlineSmall?.copyWith(
+                      fontWeight: FontWeight.w800, color: AppColors.purple)),
+              if (item.meaningEn.isNotEmpty)
+                Padding(
+                  padding: const EdgeInsets.only(top: AppSpacing.xs),
+                  child: Text(item.meaningEn,
+                      textAlign: TextAlign.center, style: text.bodyMedium),
+                ),
+              const SizedBox(height: AppSpacing.md),
+              if (!_hintShown)
+                TextButton.icon(
+                  onPressed: q.inputEnabled ? () => setState(() => _hintShown = true) : null,
+                  icon: const Icon(Icons.lightbulb_outline_rounded),
+                  label: const Text('Need a hint?'),
+                )
+              else ...[
+                Text(item.target,
+                    textAlign: TextAlign.center,
+                    style: text.titleLarge?.copyWith(fontWeight: FontWeight.w700)),
+                if (item.reading != null)
+                  Text(item.reading!, style: text.bodyMedium?.copyWith(fontStyle: FontStyle.italic)),
+                const SizedBox(height: AppSpacing.sm),
+                AudioButtons(text: item.target, locale: q.language.ttsLocale),
+              ],
+            ],
+          ),
+        );
+
+      case TaskKind.sentenceSpeak:
+        final sentence = item.sentence.isEmpty ? item.target : item.sentence;
+        return AppCard(
+          child: Column(
+            children: [
+              Text('Read the sentence aloud',
+                  style: text.labelLarge?.copyWith(color: AppColors.speaking)),
+              const SizedBox(height: AppSpacing.sm),
+              emojiView(),
+              Text(sentence,
+                  textAlign: TextAlign.center,
+                  style: text.headlineSmall?.copyWith(fontWeight: FontWeight.w800)),
+              const SizedBox(height: AppSpacing.xs),
+              Text('${item.target}  =  ${item.meaningBn}',
+                  textAlign: TextAlign.center,
+                  style: text.titleSmall?.copyWith(color: AppColors.purple)),
+              const SizedBox(height: AppSpacing.md),
+              AudioButtons(text: sentence, locale: q.language.ttsLocale, autoPlay: true),
+            ],
+          ),
+        );
+
+      default:
+        return AppCard(
+          child: Column(
+            children: [
+              Text('Read this aloud',
+                  style: text.labelLarge?.copyWith(color: AppColors.speaking)),
+              const SizedBox(height: AppSpacing.sm),
+              emojiView(),
+              Text(item.target,
+                  textAlign: TextAlign.center,
+                  style: text.headlineMedium?.copyWith(fontWeight: FontWeight.w800)),
+              if (item.reading != null)
+                Text(item.reading!,
+                    style: text.titleMedium?.copyWith(fontStyle: FontStyle.italic)),
+              const SizedBox(height: AppSpacing.xs),
+              Text(item.meaningBn,
+                  style: text.titleSmall?.copyWith(color: AppColors.purple)),
+              const SizedBox(height: AppSpacing.md),
+              AudioButtons(text: item.target, locale: q.language.ttsLocale, autoPlay: true),
+            ],
+          ),
+        );
+    }
   }
 
   @override
@@ -283,65 +323,7 @@ class _SpeakingBodyState extends ConsumerState<_SpeakingBody> {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.stretch,
       children: [
-        AppCard(
-          child: Column(
-            children: [
-              Text('Read this aloud',
-                  style: text.labelLarge?.copyWith(color: AppColors.speaking)),
-              const SizedBox(height: AppSpacing.sm),
-              Text(q.item.target,
-                  textAlign: TextAlign.center,
-                  style: text.headlineMedium?.copyWith(fontWeight: FontWeight.w800)),
-              if (q.item.reading != null)
-                Text(q.item.reading!,
-                    style: text.titleMedium?.copyWith(fontStyle: FontStyle.italic)),
-              const SizedBox(height: AppSpacing.xs),
-              Text(q.item.meaningBn,
-                  style: text.titleSmall?.copyWith(color: AppColors.purple)),
-              const SizedBox(height: AppSpacing.md),
-              AudioButtons(
-                text: q.item.target,
-                locale: q.language.ttsLocale,
-                autoPlay: true,
-              ),
-            ],
-          ),
-        ),
-        const SizedBox(height: AppSpacing.md),
-
-        // Camera assist (optional)
-        AppCard(
-          padding: const EdgeInsets.all(AppSpacing.sm),
-          child: Column(
-            children: [
-              SwitchListTile(
-                contentPadding: const EdgeInsets.symmetric(horizontal: 8),
-                title: const Text('Camera assist (optional)'),
-                subtitle: const Text(
-                  'Shows whether your lips and jaw move while you speak. '
-                  'It does not change your score. Video is never saved.',
-                ),
-                value: widget.cameraOn || widget.cameraStarting,
-                onChanged: (_phase == _Phase.idle && !widget.cameraStarting)
-                    ? (on) => widget.onCamera(on)
-                    : null,
-              ),
-              if (widget.cameraStarting)
-                const Padding(
-                  padding: EdgeInsets.all(AppSpacing.md),
-                  child: CircularProgressIndicator(),
-                ),
-              if (widget.cameraOn)
-                Padding(
-                  padding: const EdgeInsets.fromLTRB(4, 4, 4, 8),
-                  child: FaceAssistPanel(
-                    tracker: widget.tracker,
-                    onTurnOff: () => widget.onCamera(false),
-                  ),
-                ),
-            ],
-          ),
-        ),
+        _promptCard(context),
         const SizedBox(height: AppSpacing.lg),
 
         // Microphone
@@ -390,10 +372,6 @@ class _SpeakingBodyState extends ConsumerState<_SpeakingBody> {
                   style: TextStyle(color: Theme.of(context).colorScheme.onErrorContainer)),
             ),
           ),
-        ],
-        if (_faceSummary != null && q.answered) ...[
-          const SizedBox(height: AppSpacing.md),
-          FaceSummaryCard(summary: _faceSummary!),
         ],
         const SizedBox(height: AppSpacing.md),
         Text(

@@ -19,7 +19,7 @@ class SplashScreen extends StatelessWidget {
             children: [
               const Icon(Icons.translate_rounded, size: 72, color: Colors.white),
               const SizedBox(height: AppSpacing.md),
-              Text('Aso Bhasha Shiki',
+              Text('Esho Bhasha Shikhi',
                   style: text.headlineMedium?.copyWith(
                     color: Colors.white,
                     fontWeight: FontWeight.w700,

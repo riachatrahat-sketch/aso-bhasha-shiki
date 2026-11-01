@@ -74,6 +74,10 @@ class LessonDetailScreen extends ConsumerWidget {
                   children: [
                     Row(
                       children: [
+                        if (item.emoji != null) ...[
+                          Text(item.emoji!, style: const TextStyle(fontSize: 32)),
+                          const SizedBox(width: AppSpacing.sm),
+                        ],
                         Expanded(
                           child: Text(item.target,
                               style: text.titleLarge?.copyWith(fontWeight: FontWeight.w800)),
@@ -153,15 +157,6 @@ class LessonDetailScreen extends ConsumerWidget {
                           ),
                         ],
                       ),
-                      if (a == Activity.speaking && !complete) ...[
-                        const SizedBox(height: AppSpacing.sm),
-                        TextButton.icon(
-                          onPressed: () =>
-                              context.push(Routes.activity(lessonId, a.name, camera: true)),
-                          icon: const Icon(Icons.face_retouching_natural_rounded),
-                          label: const Text('Camera-assisted speaking (optional)'),
-                        ),
-                      ],
                     ],
                   ),
                 );

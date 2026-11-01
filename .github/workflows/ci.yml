@@ -64,12 +64,11 @@ jobs:
           perms = (
               '<uses-permission android:name="android.permission.INTERNET"/>\n'
               '    <uses-permission android:name="android.permission.RECORD_AUDIO"/>\n'
-              '    <uses-permission android:name="android.permission.CAMERA"/>\n'
               '    <queries><intent><action android:name="android.speech.RecognitionService"/></intent></queries>\n'
           )
           if "RECORD_AUDIO" not in s:
               s = s.replace("<application", perms + "    <application", 1)
-          s = s.replace('android:label="lingobridge_ai"', 'android:label="Aso Bhasha Shiki"')
+          s = s.replace('android:label="lingobridge_ai"', 'android:label="Esho Bhasha Shikhi"')
           open(p, "w").write(s)
           PY
           for f in android/app/build.gradle android/app/build.gradle.kts; do
@@ -81,7 +80,7 @@ jobs:
 
       - uses: actions/upload-artifact@v4
         with:
-          name: aso-bhasha-shiki-debug-apk
+          name: esho-bhasha-shikhi-debug-apk
           path: build/app/outputs/flutter-apk/app-debug.apk
 
   functions:
@@ -109,7 +108,7 @@ jobs:
     steps:
       - uses: actions/download-artifact@v4
         with:
-          name: aso-bhasha-shiki-debug-apk
+          name: esho-bhasha-shikhi-debug-apk
 
       - name: Create pre-release with the APK
         env:
@@ -117,11 +116,11 @@ jobs:
           TAG: ${{ inputs.release_tag || github.ref_name }}
         run: |
           cat > notes.md <<'NOTES'
-          Early test version of Aso Bhasha Shiki, a free English and Japanese learning app for Bengali speakers.
-          336 lessons, 3,024 practice questions (English Beginner to Advanced; Japanese Hiragana, Katakana, N5, N4).
+          Early test version of Esho Bhasha Shikhi, a free English and Japanese learning app for Bengali speakers.
+          439 lessons, 3,951 practice questions: English (Kids, Beginner to Advanced, IELTS vocabulary) and Japanese (Kids, Hiragana, Katakana, N5, N4, MEXT vocabulary), plus a Word Match game.
 
           Install: download app-debug.apk on your Android phone. If asked, allow "Install unknown apps" for your browser or file manager.
 
           Note: after signing up, check your spam folder for the verification email. The file is large (debug build), so Wi-Fi is better.
           NOTES
-          gh release create "$TAG" app-debug.apk --repo "$GITHUB_REPOSITORY" --target "$GITHUB_SHA" --prerelease --title "Aso Bhasha Shiki $TAG (early test)" --notes-file notes.md
+          gh release create "$TAG" app-debug.apk --repo "$GITHUB_REPOSITORY" --target "$GITHUB_SHA" --prerelease --title "Esho Bhasha Shikhi $TAG (early test)" --notes-file notes.md
