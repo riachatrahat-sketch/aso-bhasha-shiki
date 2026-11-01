@@ -7,7 +7,12 @@ Text format (blank lines and lines starting with // are ignored):
   English item : target | bangla | english gloss | example
   Japanese item: target | romaji | bangla | english gloss | example (English) | alt1,alt2
 
+An item line may end with an optional emoji field written as "@🍎" (used by the kids levels).
 Each lesson must have exactly 3 items. Run: python3 tools/build_lessons.py
+
+The script also decides, for every lesson, which kind of task each question is
+(see KINDS / PATTERNS below) and writes it to the "tasks" field, so the app and
+the Cloud Function only read the result and never re-implement the rules.
 Exits non-zero (and writes nothing) if validation fails.
 """
 import json, re, sys, copy
@@ -40,14 +45,21 @@ def parse(path):
         if cur is None:
             err(f"{path.name}:{n} item before any lesson header"); continue
         p = [x.strip() for x in line.split("|")]
+        emoji = None
+        if p and p[-1].startswith("@"):
+            emoji = p.pop()[1:].strip()
         if lang == "en":
             if len(p) != 4: err(f"{path.name}:{n} expected 4 fields, got {len(p)}: {line}"); continue
-            cur["items"].append({"target": p[0], "meaningBn": p[1], "meaningEn": p[2], "example": p[3]})
+            item = {"target": p[0], "meaningBn": p[1], "meaningEn": p[2], "example": p[3]}
+            if emoji: item["emoji"] = emoji
+            cur["items"].append(item)
         else:
             if len(p) not in (5, 6): err(f"{path.name}:{n} expected 5-6 fields, got {len(p)}: {line}"); continue
             alts = [a.strip() for a in p[5].split(",") if a.strip()] if len(p) == 6 else []
-            cur["items"].append({"target": p[0], "reading": p[1], "meaningBn": p[2],
-                                 "meaningEn": p[3], "example": p[4], "alternatives": alts})
+            item = {"target": p[0], "reading": p[1], "meaningBn": p[2],
+                    "meaningEn": p[3], "example": p[4], "alternatives": alts}
+            if emoji: item["emoji"] = emoji
+            cur["items"].append(item)
     return lessons
 
 out = copy.deepcopy(BASE)
@@ -69,9 +81,94 @@ for path in sorted((ROOT / "content").glob("*.txt")):
         ordered = {key: les[key] for key in ("id", "language", "level", "order", "title", "difficulty", "items")}
         lessons.append(ordered)
 
+
+def norm(s): return re.sub(r"[\s.,!?;:'\"。、！？]", "", s.lower())
+
+# ---- derived fields: sentence, cloze, tier, tasks ----
+# Task kinds. The app (lib/data/catalog) and the Cloud Function (functions/src/evaluate.ts)
+# know how to build and check each kind; they just read lesson["tasks"].
+#   speaking : readAloud | translateSpeak | sentenceSpeak
+#   listening: meaning | word | sentenceBlank | sentenceWord
+#   writing  : dictation | translateType | cloze | unscramble | sentenceDictation
+PATTERNS = {
+    "speaking": {1: ["readAloud", "readAloud", "readAloud"],
+                 2: ["readAloud", "readAloud", "translateSpeak"],
+                 3: ["readAloud", "translateSpeak", "sentenceSpeak"],
+                 4: ["translateSpeak", "sentenceSpeak", "translateSpeak"],
+                 5: ["sentenceSpeak", "translateSpeak", "sentenceSpeak"]},
+    "listening": {1: ["meaning", "word", "meaning"],
+                  2: ["word", "meaning", "sentenceBlank"],
+                  3: ["sentenceBlank", "meaning", "sentenceWord"],
+                  4: ["sentenceWord", "word", "sentenceWord"],
+                  5: ["sentenceWord", "meaning", "sentenceWord"]},
+    "writing": {1: ["dictation", "dictation", "translateType"],
+                2: ["dictation", "translateType", "cloze"],
+                3: ["translateType", "cloze", "unscramble"],
+                4: ["cloze", "unscramble", "sentenceDictation"],
+                5: ["unscramble", "sentenceDictation", "translateType"]},
+}
+# Each activity starts on a different item so the same sentence is not repeated
+# in Speaking, Listening and Writing at the same question number.
+ITEM_SHIFT = {"speaking": 0, "listening": 1, "writing": 2}
+# Where a level starts on the 1..5 difficulty ladder (it then rises inside the level).
+LEVEL_BASE = {"kids": 0, "beginner": 0, "hiragana": 0, "katakana": 0,
+              "elementary": 1, "n5": 1, "intermediate": 2, "n4": 2, "mext": 2,
+              "advanced": 3, "ielts": 2, "n3": 3, "n2": 4, "n1": 4}
+BLANK = {"en": "_____", "ja": "＿＿＿"}
+JA_SENTENCE = re.compile(r"^[ぁ-ゖァ-ヺー、。！？\s…「」・]+$")
+
+def sentence_of(lang, example):
+    return example.split(" (")[0].strip() if lang == "ja" else example.strip()
+
+def make_cloze(lang, target, sentence):
+    if lang == "en":
+        if len(target.split()) > 3: return None
+        core = target.rstrip(".?!")
+        m = re.search(r"(?<![A-Za-z'])" + re.escape(core) + r"(?![A-Za-z'])", sentence, re.I)
+        if not m or not core: return None
+        out = sentence[:m.start()] + BLANK["en"] + sentence[m.end():]
+    else:
+        i = sentence.find(target)
+        if i < 0: return None
+        out = sentence[:i] + BLANK["ja"] + sentence[i + len(target):]
+    rest = out.replace(BLANK[lang], "")
+    return out if len(re.sub(r"[\s.,!?。、！？]", "", rest)) >= 1 else None
+
+def n_words(sentence): return len(sentence.split())
+
+def resolve(kind, lang, it):
+    """Falls back to an easier kind when the item cannot support the wanted one."""
+    sent, cloze = it["sentence"], it.get("cloze")
+    same = norm(sent) == norm(it["target"])
+    while True:
+        if kind == "sentenceSpeak" and (same or (lang == "en" and n_words(sent) < 3)): kind = "translateSpeak"
+        elif kind in ("sentenceBlank", "sentenceWord") and (not cloze): kind = "word"
+        elif kind == "cloze" and not cloze: kind = "translateType"
+        elif kind == "unscramble" and not (lang == "en" and 3 <= n_words(sent) <= 12): kind = "cloze"
+        elif kind == "sentenceDictation" and (same or (lang == "en" and n_words(sent) < 3)): kind = "translateType"
+        else: return kind
+
+by_level = {}
+for l in lessons: by_level.setdefault((l["language"], l["level"]), []).append(l)
+for (lang, level), group in by_level.items():
+    group.sort(key=lambda x: x["order"])
+    n = len(group)
+    for pos, l in enumerate(group):
+        for it in l["items"]:
+            it["sentence"] = sentence_of(lang, it["example"])
+            c = make_cloze(lang, it["target"], it["sentence"])
+            if c: it["cloze"] = c
+        tier = 1 + min(4, LEVEL_BASE.get(level, 0) + (3 * pos) // max(n, 1))
+        l["tier"] = tier
+        l["difficulty"] = 1 if tier <= 2 else (2 if tier <= 4 else 3)
+        l["tasks"] = {
+            act: [{"kind": resolve(PATTERNS[act][tier][i], lang, l["items"][(i + ITEM_SHIFT[act]) % 3]),
+                   "item": (i + ITEM_SHIFT[act]) % 3} for i in range(3)]
+            for act in ("speaking", "listening", "writing")
+        }
+
 # ---- validation over the full set ----
 seen_target, seen_bn, seen_ids = {}, {}, set()
-def norm(s): return re.sub(r"[\s.,!?;:'\"。、！？]", "", s.lower())
 for l in lessons:
     if l["id"] in seen_ids: err(f"duplicate lesson id {l['id']}")
     seen_ids.add(l["id"])
@@ -92,10 +189,11 @@ for l in lessons:
             tg = it["target"]
             if l["level"] == "hiragana" and not HIRA.match(tg): err(f"{l['id']} hiragana level target not pure hiragana: {tg}")
             elif l["level"] == "katakana" and not KATA.match(tg): err(f"{l['id']} katakana level target not pure katakana: {tg}")
-            elif not KANA.match(tg.replace("ー", "ー")) and l["level"] in ("n5", "n4"):
+            elif not KANA.match(tg) and l["level"] in ("n5", "n4", "mext", "kids"):
                 err(f"{l['id']} target must be kana only (put kanji in alternatives): {tg}")
             if not re.match(r"^[a-z' ]+$", it.get("reading", "")): err(f"{l['id']} bad romaji: {it.get('reading')}")
             if not re.search(r"[぀-ヿ]", it.get("example", "")): err(f"{l['id']} example has no Japanese: {it}")
+            if not JA_SENTENCE.match(it["sentence"]): err(f"{l['id']} Japanese example must be kana only (no kanji/latin): {it['sentence']}")
         else:
             if not it.get("example"): err(f"{l['id']} missing example for {it['target']}")
 

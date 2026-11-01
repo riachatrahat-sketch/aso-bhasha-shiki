@@ -1,0 +1,105 @@
+// Japanese / Kids Starter. Kana only, one picture (emoji) per word.
+## Animals 1 | 1
+とり|tori|পাখি|bird|とりがとんでいます。 (A bird is flying.)|@🐦
+うさぎ|usagi|খরগোশ|rabbit|うさぎがはしります。 (The rabbit runs.)|@🐰
+さる|saru|বানর|monkey|さるがバナナをたべます。 (The monkey eats a banana.)|@🐒
+
+## Animals 2 | 1
+くま|kuma|ভাল্লুক|bear|くまはおおきいです。 (The bear is big.)|@🐻
+うま|uma|ঘোড়া|horse|うまがはしります。 (The horse runs.)|@🐴
+ぶた|buta|শূকর|pig|ぶたがいます。 (There is a pig.)|@🐷
+
+## Animals 3 | 1
+かめ|kame|কচ্ছপ|turtle|かめはゆっくりあるきます。 (The turtle walks slowly.)|@🐢
+かえる|kaeru|ব্যাঙ|frog|かえるがジャンプします。 (The frog jumps.)|@🐸
+ひつじ|hitsuji|ভেড়া|sheep|ひつじがくさをたべます。 (The sheep eats grass.)|@🐑
+
+## Animals 4 | 1
+ちょうちょ|choucho|প্রজাপতি|butterfly|ちょうちょがとんでいます。 (A butterfly is flying.)|@🦋
+くじら|kujira|তিমি|whale|くじらはうみにいます。 (Whales live in the sea.)|@🐋
+にわとり|niwatori|মুরগি|chicken|にわとりがたまごをうみます。 (The chicken lays an egg.)|@🐔
+
+## Fruits 1 | 1
+いちご|ichigo|স্ট্রবেরি|strawberry|いちごがすきです。 (I like strawberries.)|@🍓
+すいか|suika|তরমুজ|watermelon|すいかはあまいです。 (Watermelon is sweet.)|@🍉
+ぶどう|budou|আঙুর|grapes|ぶどうをたべます。 (I eat grapes.)|@🍇
+
+## Fruits 2 | 1
+バナナ|banana|কলা|banana|バナナをたべます。 (I eat a banana.)|@🍌
+メロン|meron|খরমুজ|melon|メロンはおいしいです。 (Melon is delicious.)|@🍈
+レモン|remon|লেবু|lemon|レモンはすっぱいです。 (Lemons are sour.)|@🍋
+
+## Vegetables | 1
+にんじん|ninjin|গাজর|carrot|にんじんはあかいです。 (Carrots are orange-red.)|@🥕
+きゅうり|kyuuri|শসা|cucumber|きゅうりをきります。 (I cut a cucumber.)|@🥒
+トマト|tomato|টমেটো|tomato|トマトはあかいです。 (Tomatoes are red.)|@🍅
+
+## My Body 1 | 1
+くち|kuchi|মুখ|mouth|くちをあけてください。 (Please open your mouth.)|@👄
+かみ|kami|চুল|hair|かみがながいです。 (Her hair is long.)|@💇
+うで|ude|বাহু|arm|うでをあげてください。 (Please raise your arm.)|@💪
+
+## My Body 2 | 1
+くび|kubi|ঘাড়|neck|くびがいたいです。 (My neck hurts.)|@🦒
+かた|kata|কাঁধ|shoulder|かたをたたきます。 (I pat the shoulder.)|@🤷
+ほっぺ|hoppe|গাল|cheek|ほっぺがあかいです。 (The cheeks are red.)|@😊
+
+## My Family | 1
+あかちゃん|akachan|ছোট্ট বাবু|baby|あかちゃんがねています。 (The baby is sleeping.)|@👶
+おじいちゃん|ojiichan|দাদু|grandpa|おじいちゃんはやさしいです。 (Grandpa is kind.)|@👴
+おばあちゃん|obaachan|দিদা|grandma|おばあちゃんにあいます。 (I meet grandma.)|@👵
+
+## Toys | 1
+ボール|booru|বল|ball|ボールをなげます。 (I throw the ball.)|@⚽
+にんぎょう|ningyou|পুতুল|doll|にんぎょうであそびます。 (I play with a doll.)|@🪆
+ぬいぐるみ|nuigurumi|নরম খেলনা|stuffed toy|ぬいぐるみがすきです。 (I like stuffed toys.)|@🧸
+
+## More Colors | 1
+ピンク|pinku|গোলাপি|pink|ピンクのはなです。 (It is a pink flower.)|@🩷
+むらさき|murasaki|বেগুনি|purple|むらさきのぶどうです。 (They are purple grapes.)|@🟣
+ちゃいろ|chairo|বাদামি|brown|ちゃいろのくまです。 (It is a brown bear.)|@🟤
+
+## Nature | 1
+はっぱ|happa|পাতা|leaf|はっぱがみどりです。 (The leaf is green.)|@🍃
+つき|tsuki|চাঁদ|moon|つきがきれいです。 (The moon is beautiful.)|@🌙
+くも|kumo|মেঘ|cloud|くもがしろいです。 (The clouds are white.)|@☁️
+
+## Weather | 1
+はれ|hare|রৌদ্রোজ্জ্বল আবহাওয়া|sunny weather|きょうははれです。 (It is sunny today.)|@☀️
+にじ|niji|রামধনু|rainbow|にじがでています。 (A rainbow is out.)|@🌈
+かみなり|kaminari|বজ্রপাত|thunder|かみなりがなっています。 (Thunder is rumbling.)|@⛈️
+
+## Vehicles | 1
+パトカー|patokaa|পুলিশের গাড়ি|police car|パトカーがはしります。 (The police car runs.)|@🚓
+きゅうきゅうしゃ|kyuukyuusha|অ্যাম্বুলেন্স|ambulance|きゅうきゅうしゃがきました。 (The ambulance came.)|@🚑
+ヘリコプター|herikoputaa|হেলিকপ্টার|helicopter|ヘリコプターがとんでいます。 (A helicopter is flying.)|@🚁
+
+## School Things | 1
+けしゴム|keshigomu|রাবার|eraser|けしゴムをかします。 (I lend an eraser.)|@🧽
+ものさし|monosashi|স্কেল|ruler|ものさしでせんをひきます。 (I draw a line with a ruler.)|@📏
+クレヨン|kureyon|ক্রেয়ন|crayon|クレヨンでえをかきます。 (I draw a picture with crayons.)|@🖍️
+
+## Things at Home | 1
+いす|isu|চেয়ার|chair|いすにすわります。 (I sit on the chair.)|@🪑
+つくえ|tsukue|পড়ার টেবিল|desk|つくえでべんきょうします。 (I study at the desk.)|@📚
+まくら|makura|বালিশ|pillow|まくらはやわらかいです。 (The pillow is soft.)|@🛏️
+
+## Yummy Food | 1
+おにぎり|onigiri|ভাতের গোলা|rice ball|おにぎりをたべます。 (I eat a rice ball.)|@🍙
+ラーメン|raamen|রামেন নুডলস|ramen|ラーメンはあついです。 (The ramen is hot.)|@🍜
+たこやき|takoyaki|তাকোয়াকি|takoyaki|たこやきをたべます。 (I eat takoyaki.)|@🐙
+
+## Action Words | 1
+ジャンプ|janpu|লাফ|jump|ジャンプします。 (I jump.)|@🤸
+ダンス|dansu|নাচ|dance|ダンスがすきです。 (I like dancing.)|@💃
+うたう|utau|গান গাওয়া|to sing|うたうのがすきです。 (I like singing.)|@🎤
+
+## Feelings | 1
+うれしい|ureshii|খুশি|glad|プレゼントでうれしいです。 (I am glad about the present.)|@😄
+かなしい|kanashii|দুঃখিত|sad|かなしいです。 (I am sad.)|@😢
+こわい|kowai|ভীতিকর|scary|おばけはこわいです。 (Ghosts are scary.)|@👻
+
+## Say Hello | 1
+おはよう|ohayou|সুপ্রভাত (বন্ধুদের)|good morning (casual)|おはよう、げんきですか。 (Good morning, how are you?)|@🌅
+バイバイ|baibai|টা-টা|bye-bye|バイバイ、またね。 (Bye-bye, see you.)|@👋
+ありがとう|arigatou|ধন্যবাদ (বন্ধুদের)|thanks (casual)|ありがとう、うれしいです。 (Thank you, I am happy.)|@🙏

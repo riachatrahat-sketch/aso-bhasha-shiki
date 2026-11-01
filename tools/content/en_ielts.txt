@@ -1,0 +1,165 @@
+// English / IELTS Vocabulary. Academic words for the Reading, Writing and Speaking tests.
+## Environment 1 | 2
+pollution|দূষণ|Harmful substances in air, water or land|Pollution is a serious problem in big cities.
+climate|জলবায়ু|The usual weather of a place over a long time|The climate of Bangladesh is warm and wet.
+ecosystem|বাস্তুতন্ত্র|A community of living things and their environment|A forest is a complex ecosystem.
+
+## Environment 2 | 2
+sustainable|টেকসই|Able to continue without harming the environment|We need sustainable ways to produce energy.
+conserve|সংরক্ষণ করা|To protect and use carefully|We should conserve water.
+renewable|নবায়নযোগ্য|Able to be replaced naturally|Solar power is a renewable source of energy.
+
+## Environment 3 | 2
+emission|নির্গমন|A gas or substance sent into the air|Car emissions harm the air.
+extinct|বিলুপ্ত|No longer existing|Many animals have become extinct.
+habitat|আবাসস্থল|The natural home of an animal or plant|Cutting trees destroys the habitat of tigers.
+
+## Education 1 | 2
+curriculum|পাঠ্যক্রম|The subjects taught in a school|The curriculum includes science and art.
+graduate|স্নাতক হওয়া|To finish a university degree|She will graduate from university next year.
+tuition|শিক্ষা ফি|Money paid for teaching|Tuition fees are rising every year.
+
+## Education 2 | 2
+scholarship|বৃত্তি|Money given to a student to pay for study|He won a scholarship to study in Japan.
+literacy|সাক্ষরতা|The ability to read and write|The government wants to improve literacy.
+assignment|অ্যাসাইনমেন্ট|A piece of work given to a student|The assignment is due on Monday.
+
+## Education 3 | 2
+lecture|বক্তৃতা|A talk given to students|The lecture lasted two hours.
+enroll|ভর্তি হওয়া|To join a course officially|I want to enroll in an English course.
+qualification|যোগ্যতা|A certificate or skill needed for a job|She has a good qualification in nursing.
+
+## Technology 1 | 2
+innovation|উদ্ভাবন|A new idea or method|Innovation drives economic growth.
+device|যন্ত্র|A small machine made for a purpose|This device measures your heart rate.
+software|সফটওয়্যার|Programs that run on a computer|The company develops education software.
+
+## Technology 2 | 2
+automate|স্বয়ংক্রিয় করা|To make a process work by machine|Many factories automate their work.
+digital|ডিজিটাল|Using computer technology|Digital skills are important today.
+database|ডেটাবেস|A large collection of stored information|The hospital keeps patient records in a database.
+
+## Technology 3 | 2
+virtual|ভার্চুয়াল|Existing on a computer, not in the real world|Students can take a virtual tour of a museum.
+invent|নতুন কিছু তৈরি করা|To create something new for the first time|Who invented the telephone?
+network|নেটওয়ার্ক|A group of connected computers or people|The school has a fast computer network.
+
+## Health 1 | 2
+nutrition|পুষ্টি|Food needed for health and growth|Good nutrition helps children grow.
+obesity|স্থূলতা|The condition of being very overweight|Obesity can lead to heart disease.
+disease|রোগ|An illness of the body|Clean water prevents many diseases.
+
+## Health 2 | 2
+symptom|লক্ষণ|A sign of an illness|A high fever is a common symptom of flu.
+immune|রোগ প্রতিরোধী|Protected against a disease|Vaccines make people immune to some diseases.
+mental|মানসিক|Related to the mind|Exercise is good for mental health.
+
+## Health 3 | 2
+treatment|চিকিৎসা|Medical care for an illness|The patient is receiving treatment at the hospital.
+diagnose|রোগ নির্ণয় করা|To find out what illness a person has|Doctors diagnose the problem with a blood test.
+therapy|থেরাপি|Treatment to help a person recover|Physical therapy helped him walk again.
+
+## Society 1 | 2
+community|সম্প্রদায়|A group of people living in one area|The local community built a new school.
+population|জনসংখ্যা|The number of people living in a place|The population of the city is growing fast.
+urban|শহুরে|Related to a city|Urban life is often stressful.
+
+## Society 2 | 2
+poverty|দারিদ্র্য|The state of having very little money|Education can help reduce poverty.
+inequality|বৈষম্য|An unfair difference between groups|Income inequality is a global problem.
+welfare|কল্যাণ|Help given to people who need it|The state provides welfare for the elderly.
+
+## Society 3 | 2
+diversity|বৈচিত্র্য|A mix of different kinds of people or things|Cultural diversity makes a country richer.
+tradition|ঐতিহ্য|A custom passed down over generations|Wearing new clothes on Eid is a tradition.
+generation|প্রজন্ম|People born at about the same time|The younger generation uses social media a lot.
+
+## Economy 1 | 2
+income|আয়|Money received regularly|Her monthly income is not high.
+expense|খরচ|Money spent on something|Rent is my biggest expense.
+profit|মুনাফা|Money earned after costs are paid|The company made a large profit this year.
+
+## Economy 2 | 2
+inflation|মুদ্রাস্ফীতি|A general rise in prices|Inflation makes food more expensive.
+export|রপ্তানি করা|To sell goods to another country|Bangladesh exports clothes to many countries.
+import|আমদানি করা|To bring goods in from another country|The country imports oil from abroad.
+
+## Economy 3 | 2
+employ|নিয়োগ দেওয়া|To give someone a job|The factory employs five hundred workers.
+salary|বেতন|Fixed pay for a job each month|He receives his salary on the first of the month.
+industry|শিল্প|Businesses that make goods or services|The tourism industry is growing quickly.
+
+## Government 1 | 3
+policy|নীতি|A plan of action agreed by a government or group|The new policy supports small businesses.
+authority|কর্তৃপক্ষ|A group with the power to make decisions|The local authority repaired the road.
+regulation|বিধিমালা|An official rule|There are strict regulations for food safety.
+
+## Government 2 | 3
+legislation|আইন প্রণয়ন|Laws made by a government|New legislation protects workers.
+citizen|নাগরিক|A person who belongs to a country|Every citizen has the right to vote.
+election|নির্বাচন|A vote to choose a leader|The election will be held in January.
+
+## Government 3 | 3
+tax|কর|Money paid to the government|People pay tax on their income.
+budget|বাজেট|A plan for how money will be spent|The budget for education has increased.
+subsidy|ভর্তুকি|Money given by the government to reduce prices|Farmers receive a subsidy on fertilizer.
+
+## Media 1 | 3
+broadcast|সম্প্রচার করা|To send out a program on TV or radio|The match will be broadcast live.
+journalist|সাংবাদিক|A person who writes news stories|The journalist interviewed the minister.
+headline|শিরোনাম|The title of a news story|The headline caught my attention.
+
+## Media 2 | 3
+advertise|বিজ্ঞাপন দেওয়া|To tell the public about a product|Companies advertise on social media.
+audience|শ্রোতা|People who watch or listen to something|The audience clapped loudly.
+publish|প্রকাশ করা|To print and sell a book or article|The university will publish the research.
+
+## Media 3 | 3
+opinion|মতামত|What you think about something|In my opinion, schools should teach life skills.
+survey|জরিপ|A set of questions asked to many people|A survey showed that most people prefer online shopping.
+statistics|পরিসংখ্যান|Numbers that show facts|Statistics show that crime has fallen.
+
+## Science 1 | 3
+experiment|পরীক্ষা|A test to find out something|The students did an experiment in the lab.
+hypothesis|অনুমান|An idea that needs to be tested|The scientist tested her hypothesis.
+theory|তত্ত্ব|A set of ideas to explain something|Einstein developed the theory of relativity.
+
+## Science 2 | 3
+research|গবেষণা|Careful study to find new facts|Research shows that sleep improves memory.
+discover|খুঁজে পাওয়া|To find something for the first time|Scientists discovered a new species of frog.
+observe|পর্যবেক্ষণ করা|To watch carefully|The children observed the birds for an hour.
+
+## Science 3 | 3
+method|প্রণালী|A way of doing something|This method saves time and money.
+result|ফলাফল (গবেষণার)|What happens because of something|The results were better than expected.
+conclude|সিদ্ধান্তে আসা|To decide after thinking about the facts|The report concluded that the plan was successful.
+
+## Travel 1 | 3
+tourism|পর্যটন|The business of travel for pleasure|Tourism brings money to coastal towns.
+destination|গন্তব্য|The place where you are going|Cox's Bazar is a popular holiday destination.
+accommodation|আবাসন|A place to stay while traveling|The price includes accommodation and meals.
+
+## Travel 2 | 3
+transport|পরিবহন|A way of moving people or goods|Public transport is cheaper than a taxi.
+journey|যাত্রা|A trip from one place to another|The journey takes about six hours.
+commute|যাতায়াত করা|To travel regularly to work or school|Many people commute to the city by train.
+
+## General Ideas 1 | 3
+advantage|সুবিধা|A good point that helps you|One advantage of cycling is that it is free.
+disadvantage|অসুবিধা|A bad point or problem|The main disadvantage is the high cost.
+consequence|পরিণতি|A result of an action|Pollution is a consequence of heavy traffic.
+
+## General Ideas 2 | 3
+benefit|উপকার|A helpful effect|Regular exercise has many benefits.
+challenge|চ্যালেঞ্জ|Something difficult that tests you|Learning a new language is a big challenge.
+solution|সমাধান|An answer to a problem|We need a long-term solution to traffic jams.
+
+## General Ideas 3 | 3
+decrease|হ্রাস পাওয়া|To become smaller|The number of students decreased last year.
+maintain|বজায় রাখা|To keep something in good condition|It is hard to maintain a healthy diet.
+improve|উন্নত করা|To become or make better|My English has improved a lot.
+
+## Comparing Ideas | 3
+contrast|বৈপরীত্য|A clear difference between two things|There is a sharp contrast between city and village life.
+compare|তুলনা করা|To look at how things are alike or different|Compare the two graphs carefully.
+illustrate|ব্যাখ্যা করা|To explain with an example or picture|The chart illustrates the rise in temperature.

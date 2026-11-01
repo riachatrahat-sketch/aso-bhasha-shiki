@@ -25,9 +25,6 @@ class LegalScreen extends StatelessWidget {
         'The microphone is used only while you practise speaking. By default your speech is turned into text '
             'by your phone\'s speech recognition service. If the optional pronunciation service is enabled, a short '
             'recording is sent to our server and to Microsoft Azure Speech to score it, and is not stored by this app.'),
-    ('Camera',
-        'The camera is optional and off by default. It runs on your device to find your face and lips for a movement '
-            'hint. Video and photos are not saved or uploaded.'),
     ('Where data is stored',
         'Your profile and progress are stored in Google Firebase (Cloud Firestore). '
             'Data is protected by access rules so only you can read your own data.'),
@@ -39,7 +36,7 @@ class LegalScreen extends StatelessWidget {
 
   static const _terms = <(String, String)>[
     ('Using the app',
-        'Aso Bhasha Shiki is a free learning tool. You agree to use it lawfully and not to try to break, '
+        'Esho Bhasha Shikhi is a free learning tool. You agree to use it lawfully and not to try to break, '
             'overload or cheat the scoring system.'),
     ('Accounts',
         'You are responsible for keeping your login details private and for the accuracy of the details you give.'),

@@ -54,6 +54,12 @@ class _ListeningBodyState extends ConsumerState<_ListeningBody> {
               Text(question.prompt,
                   style: text.titleLarge?.copyWith(fontWeight: FontWeight.w700),
                   textAlign: TextAlign.center),
+              if (question.displayText != null) ...[
+                const SizedBox(height: AppSpacing.md),
+                Text(question.displayText!,
+                    textAlign: TextAlign.center,
+                    style: text.headlineSmall?.copyWith(fontWeight: FontWeight.w800)),
+              ],
               const SizedBox(height: AppSpacing.md),
               AudioButtons(
                 text: question.audioText,

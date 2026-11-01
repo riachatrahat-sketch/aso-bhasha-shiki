@@ -18,6 +18,7 @@ class QuestionContext {
     required this.lesson,
     required this.language,
     required this.item,
+    required this.kind,
     required this.index,
     required this.busy,
     required this.answered,
@@ -27,6 +28,9 @@ class QuestionContext {
   final Lesson lesson;
   final LanguageInfo language;
   final LessonItem item;
+
+  /// What this question asks the learner to do.
+  final TaskKind kind;
   final int index;
 
   /// An answer is being checked.
@@ -156,10 +160,12 @@ class _ActivityShellState extends ConsumerState<ActivityShell> {
     final index = _index!;
     final result = _result;
 
+    final spec = lesson.taskFor(widget.activity, index);
     final q = QuestionContext(
       lesson: lesson,
       language: language,
-      item: lesson.items[index],
+      item: lesson.items[spec.item],
+      kind: spec.kind,
       index: index,
       busy: _busy,
       answered: result != null,

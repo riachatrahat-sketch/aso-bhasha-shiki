@@ -3,7 +3,6 @@ import '../core/utils/text_similarity.dart';
 import '../data/catalog/lesson_catalog.dart';
 import '../data/models/attempt.dart';
 import '../data/models/lesson.dart';
-import '../data/models/question.dart';
 import 'scoring/scoring_policy.dart';
 
 /// Decides whether an answer is correct. Pure Dart, no I/O.
@@ -32,9 +31,33 @@ class AttemptEvaluator {
   final LessonCatalog catalog;
   final ScoringPolicy policy;
 
+  /// The text the learner should say or type for [activity] question [index].
+  /// For listening it is the correct option. Mirrored in functions/src/evaluate.ts.
+  static String expectedAnswer(LessonCatalog catalog, Lesson lesson, Activity activity, int index) {
+    final spec = lesson.taskFor(activity, index);
+    final item = lesson.items[spec.item];
+    switch (activity) {
+      case Activity.listening:
+        return catalog.listeningQuestion(lesson, index).correct;
+      case Activity.speaking:
+        return spec.kind == TaskKind.sentenceSpeak ? _sentenceOf(item) : item.target;
+      case Activity.writing:
+        return _isSentenceTyping(spec.kind) ? _sentenceOf(item) : item.target;
+    }
+  }
+
+  static bool _isSentenceTyping(TaskKind k) =>
+      k == TaskKind.unscramble || k == TaskKind.sentenceDictation;
+
+  static String _sentenceOf(LessonItem item) => item.sentence.isEmpty ? item.target : item.sentence;
+
   Evaluation evaluate(Lesson lesson, AttemptRequest req) {
-    final item = lesson.items[req.index];
+    final spec = lesson.taskFor(req.activity, req.index);
+    final item = lesson.items[spec.item];
     final lang = lesson.language;
+    final expected = expectedAnswer(catalog, lesson, req.activity, req.index);
+    final isTarget = expected == item.target;
+    final alternatives = isTarget ? item.alternatives : const <String>[];
 
     switch (req.activity) {
       case Activity.listening:
@@ -44,26 +67,30 @@ class AttemptEvaluator {
         return Evaluation(
           correct: ok,
           correctAnswer: q.correct,
-          explanation: q.type == ListeningType.meaning
+          explanation: q.kind == TaskKind.meaning
               ? '"${item.target}" means "${item.meaningBn}".'
-              : 'The word you heard was "${item.target}" (${item.meaningBn}).',
+              : (q.kind == TaskKind.word
+                  ? 'The word you heard was "${item.target}" (${item.meaningBn}).'
+                  : '"${item.target}" (${item.meaningBn}) is the word in: ${_sentenceOf(item)}'),
           heard: chosen,
         );
 
       case Activity.writing:
         final typed = req.answer ?? '';
-        final ok = AnswerNormalizer.isMatch(
-          input: typed,
-          expected: item.target,
-          alternatives: item.alternatives,
-          language: lang,
-        );
+        final ok = _isSentenceTyping(spec.kind)
+            ? AnswerNormalizer.isLooseMatch(input: typed, expected: expected, language: lang)
+            : AnswerNormalizer.isMatch(
+                input: typed,
+                expected: expected,
+                alternatives: alternatives,
+                language: lang,
+              );
         return Evaluation(
           correct: ok,
-          correctAnswer: item.target,
+          correctAnswer: expected,
           explanation: ok
               ? 'Well done.'
-              : 'The correct spelling is "${item.target}". ${_differenceHint(item.target, typed, lang)}',
+              : 'The correct answer is "$expected". ${_differenceHint(expected, typed, lang)}',
           heard: typed,
         );
 
@@ -72,27 +99,27 @@ class AttemptEvaluator {
         if (AnswerNormalizer.normalize(heard, language: lang).isEmpty) {
           return Evaluation(
             correct: false,
-            correctAnswer: item.target,
+            correctAnswer: expected,
             explanation: 'We did not hear anything. Check your microphone and try again.',
             heard: heard,
           );
         }
         final c = SpeechMatcher.compare(
-          expected: item.target,
+          expected: expected,
           heard: heard,
           language: lang,
-          alternatives: item.alternatives,
+          alternatives: alternatives,
         );
         final ok = c.similarity >= policy.speakingPassSimilarity &&
             c.completeness >= policy.speakingMinCompleteness;
         return Evaluation(
           correct: ok,
-          correctAnswer: item.target,
+          correctAnswer: expected,
           explanation: ok
               ? 'Clear speech. The recogniser understood you.'
               : (c.missing.isEmpty
-                  ? 'Say it again slowly: "${item.target}".'
-                  : 'Missing or unclear: ${c.missing.join(lang == 'ja' ? '' : ', ')}. Say "${item.target}" again.'),
+                  ? 'Say it again slowly: "$expected".'
+                  : 'Missing or unclear: ${c.missing.join(lang == 'ja' ? '' : ', ')}. Say "$expected" again.'),
           heard: heard,
           comparison: c,
         );

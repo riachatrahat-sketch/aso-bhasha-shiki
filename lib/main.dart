@@ -14,7 +14,7 @@ import 'providers/providers.dart';
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
 
-  // Portrait only: the face tracker assumes an upright phone.
+  // Portrait only: the lesson screens are designed for an upright phone.
   await SystemChrome.setPreferredOrientations([DeviceOrientation.portraitUp]);
 
   final prefs = await SharedPreferences.getInstance();

@@ -14,7 +14,7 @@ class LingoBridgeApp extends ConsumerWidget {
     final router = ref.watch(routerProvider);
 
     return MaterialApp.router(
-      title: 'Aso Bhasha Shiki',
+      title: 'Esho Bhasha Shikhi',
       debugShowCheckedModeBanner: false,
       theme: AppTheme.light(),
       darkTheme: AppTheme.dark(),

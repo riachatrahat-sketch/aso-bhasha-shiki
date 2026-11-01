@@ -1,0 +1,100 @@
+// English / Kids Starter. Short, concrete words with a picture (emoji) for young learners.
+## Farm Animals | 1
+horse|ঘোড়া|An animal you can ride|The horse runs in the field.|@🐴
+sheep|ভেড়া|A farm animal with soft wool|The sheep eats grass.|@🐑
+rabbit|খরগোশ|A small animal with long ears|The rabbit likes carrots.|@🐰
+
+## Wild Animals | 1
+monkey|বানর|An animal that climbs trees|The monkey eats a banana.|@🐒
+elephant|হাতি|A very big animal with a long trunk|The elephant is very big.|@🐘
+lion|সিংহ|The king of the jungle|The lion is strong.|@🦁
+
+## Little Animals | 1
+duck|হাঁস|A bird that swims in the pond|The duck swims in the pond.|@🦆
+frog|ব্যাঙ|A green animal that jumps|The frog jumps into the water.|@🐸
+butterfly|প্রজাপতি|An insect with colorful wings|The butterfly is on the flower.|@🦋
+
+## Fruits | 1
+strawberry|স্ট্রবেরি|A small red fruit|I like strawberry ice cream.|@🍓
+lemon|লেবু|A sour yellow fruit|The lemon is sour.|@🍋
+pear|নাশপাতি|A sweet fruit that is round at the bottom|I eat a pear every day.|@🍐
+
+## Vegetables | 1
+carrot|গাজর|An orange vegetable|The carrot is orange.|@🥕
+cabbage|বাঁধাকপি|A big round green vegetable|Mom cooks the cabbage.|@🥬
+cucumber|শসা|A long green vegetable for salad|I eat a cucumber in the summer.|@🥒
+
+## My Body 1 | 1
+arm|বাহু|The part of the body between shoulder and hand|Raise your arm.|@💪
+leg|পা|The part of the body you walk with|My leg is tired.|@🦵
+finger|আঙুল|One of the five parts of your hand|I have ten fingers.|@☝️
+
+## My Body 2 | 1
+hair|চুল|It grows on your head|She has long hair.|@💇
+tooth|দাঁত|You use it to bite food|My tooth is white and clean.|@🦷
+knee|হাঁটু|The middle part of your leg|My knee hurts.|@🦿
+
+## My Family | 1
+baby|শিশু|A very young child|The baby is sleeping.|@👶
+grandfather|দাদা|Your father's father|My grandfather tells good stories.|@👴
+aunt|খালা|Your mother's sister|My aunt lives in Dhaka.|@👩
+
+## Toys | 1
+ball|বল|A round toy you throw and kick|I kick the ball.|@⚽
+doll|পুতুল|A toy that looks like a person|She plays with her doll.|@🪆
+kite|ঘুড়ি|A toy that flies in the wind|We fly a kite in the field.|@🪁
+
+## In My School Bag | 1
+pencil|পেন্সিল|You write and draw with it|I write with a pencil.|@✏️
+eraser|রাবার|It removes pencil marks|Use the eraser to fix your mistake.|@🧽
+ruler|স্কেল|You use it to draw straight lines|I draw a line with a ruler.|@📏
+
+## Shapes | 1
+circle|বৃত্ত|A round shape|The sun looks like a circle.|@⚪
+square|বর্গক্ষেত্র|A shape with four equal sides|The box is a square.|@🟦
+triangle|ত্রিভুজ|A shape with three sides|A triangle has three sides.|@🔺
+
+## More Colors | 1
+pink|গোলাপি|The color of a rose|She has a pink dress.|@🩷
+purple|বেগুনি|A color made from red and blue|The grapes are purple.|@🟣
+brown|বাদামি|The color of chocolate|The bear is brown.|@🟤
+
+## Weather and Sky | 1
+cloud|মেঘ|A white or gray shape in the sky|I see a big cloud.|@☁️
+snow|তুষার|White ice that falls in cold places|The snow is cold.|@❄️
+rainbow|রামধনু|Seven colors in the sky after rain|Look at the rainbow!|@🌈
+
+## Night Sky and Nature | 1
+moon|চাঁদ|It shines in the sky at night|The moon is bright tonight.|@🌙
+star|তারা|A small light in the night sky|I see a star.|@⭐
+tree|গাছ|A tall plant with leaves|The bird sits in the tree.|@🌳
+
+## Things That Go | 1
+car|গাড়ি|A vehicle with four wheels|Dad drives the car.|@🚗
+boat|নৌকা|It floats on the water|The boat is on the river.|@⛵
+plane|বিমান|It flies in the sky|The plane is very fast.|@✈️
+
+## Things at Home | 1
+lamp|বাতি|It gives light in a room|Turn on the lamp.|@💡
+clock|ঘড়ি|It shows the time|The clock is on the wall.|@🕒
+cup|কাপ|You drink tea from it|I drink milk from a cup.|@☕
+
+## Yummy Food | 1
+cake|কেক|A sweet food for birthdays|We eat cake on my birthday.|@🎂
+cookie|কুকি|A small sweet snack|I want a cookie.|@🍪
+pizza|পিৎজা|A round food with cheese|We eat pizza on Friday.|@🍕
+
+## How Do You Feel | 1
+sleepy|ঘুম ঘুম|Wanting to go to sleep|I am sleepy.|@😴
+brave|সাহসী|Not afraid|The brave boy helps the cat.|@🦸
+surprised|অবাক|Feeling something unexpected|She is surprised by the gift.|@😲
+
+## Action Words 1 | 1
+jump|লাফ দেওয়া|To go up in the air with your legs|I can jump high.|@🤸
+clap|হাততালি দেওয়া|To hit your hands together|Clap your hands.|@👏
+smile|হাসি দেওয়া|To show you are happy with your face|Please smile for the photo.|@😊
+
+## Action Words 2 | 1
+dance|নাচ|To move your body to music|We dance at the party.|@💃
+sing|গান গাওয়া|To make music with your voice|I like to sing in the morning.|@🎤
+draw|ছবি আঁকা|To make a picture with a pencil|I draw a house.|@🖍️

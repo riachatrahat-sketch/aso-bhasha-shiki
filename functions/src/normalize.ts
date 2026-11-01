@@ -52,3 +52,14 @@ export function isMatch(
   if (n.length === 0) return false;
   return [expected, ...alternatives].some((c) => normalize(c, language) === n);
 }
+
+function dropPunctuation(s: string): string {
+  return s.replace(/[.,!?;:"、。！？「」]/g, '').replace(/ +/g, ' ').trim();
+}
+
+/** Like isMatch for whole sentences: punctuation anywhere is ignored. */
+export function isLooseMatch(input: string, expected: string, language: string): boolean {
+  const n = dropPunctuation(normalize(input, language));
+  if (n.length === 0) return false;
+  return n === dropPunctuation(normalize(expected, language));
+}

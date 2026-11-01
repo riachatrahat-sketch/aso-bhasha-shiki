@@ -10,6 +10,8 @@ import '../../features/auth/forgot_password_screen.dart';
 import '../../features/auth/login_screen.dart';
 import '../../features/auth/signup_screen.dart';
 import '../../features/auth/verify_email_screen.dart';
+import '../../features/games/game_hub_screen.dart';
+import '../../features/games/match_game_screen.dart';
 import '../../features/home/home_screen.dart';
 import '../../features/home/home_shell.dart';
 import '../../features/learn/language_selection_screen.dart';
@@ -41,14 +43,15 @@ abstract final class Routes {
   static const editProfile = '/profile/edit';
   static const settings = '/settings';
   static const mistakes = '/mistakes';
+  static const games = '/games';
 
   static String levels(String lang) => '/learn/$lang';
   static String lessons(String lang, String level) => '/learn/$lang/$level';
   static String lesson(String id) => '/lesson/$id';
-  static String activity(String id, String name, {bool camera = false}) =>
-      '/lesson/$id/$name${camera ? '?camera=1' : ''}';
+  static String activity(String id, String name) => '/lesson/$id/$name';
   static String result(String id) => '/lesson/$id/result';
   static String legal(String doc) => '/legal/$doc';
+  static String matchGame(String lang, String level, int number) => '/games/match/$lang/$level/$number';
 }
 
 const _signedOutRoutes = {Routes.onboarding, Routes.login, Routes.signup, Routes.forgot};
@@ -128,10 +131,7 @@ final routerProvider = Provider<GoRouter>((ref) {
       ),
       GoRoute(
         path: '/lesson/:id/speaking',
-        builder: (c, s) => SpeakingScreen(
-          lessonId: s.pathParameters['id']!,
-          startWithCamera: s.uri.queryParameters['camera'] == '1',
-        ),
+        builder: (c, s) => SpeakingScreen(lessonId: s.pathParameters['id']!),
       ),
       GoRoute(
         path: '/lesson/:id/listening',
@@ -146,6 +146,15 @@ final routerProvider = Provider<GoRouter>((ref) {
         builder: (c, s) => LessonResultScreen(lessonId: s.pathParameters['id']!),
       ),
       GoRoute(path: Routes.mistakes, builder: (c, s) => const MistakesScreen()),
+      GoRoute(path: Routes.games, builder: (c, s) => const GameHubScreen()),
+      GoRoute(
+        path: '/games/match/:lang/:level/:n',
+        builder: (c, s) => MatchGameScreen(
+          languageId: s.pathParameters['lang']!,
+          levelId: s.pathParameters['level']!,
+          number: int.tryParse(s.pathParameters['n']!) ?? 1,
+        ),
+      ),
       GoRoute(path: Routes.editProfile, builder: (c, s) => const EditProfileScreen()),
       GoRoute(path: Routes.settings, builder: (c, s) => const SettingsScreen()),
       GoRoute(

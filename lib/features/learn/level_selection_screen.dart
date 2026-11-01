@@ -6,6 +6,7 @@ import '../../core/router/app_router.dart';
 import '../../core/theme/app_tokens.dart';
 import '../../core/widgets/app_card.dart';
 import '../../core/widgets/state_views.dart';
+import '../../data/models/lesson.dart';
 import '../../domain/lesson_picker.dart';
 import '../../providers/providers.dart';
 
@@ -39,7 +40,14 @@ class LevelSelectionScreen extends ConsumerWidget {
         data: (progress) => ListView(
           padding: const EdgeInsets.all(AppSpacing.md),
           children: [
-            for (final level in language.levels) ...[
+            for (final group in <(String, List<LevelInfo>)>[
+              ('Kids  |  বাচ্চাদের জন্য', language.levels.where((l) => l.isKids).toList()),
+              ('Teens and adults  |  বড়দের জন্য', language.levels.where((l) => !l.isKids).toList()),
+            ])
+              if (group.$2.isNotEmpty) ...[
+            SectionTitle(group.$1),
+            const SizedBox(height: AppSpacing.sm),
+            for (final level in group.$2) ...[
               Builder(builder: (context) {
                 final count = catalog.lessonsFor(languageId, levelId: level.id).length;
                 final available = count > 0;
@@ -97,6 +105,7 @@ class LevelSelectionScreen extends ConsumerWidget {
                 );
               }),
               const SizedBox(height: AppSpacing.md),
+            ],
             ],
           ],
         ),

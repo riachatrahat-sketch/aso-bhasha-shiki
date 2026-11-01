@@ -27,7 +27,7 @@ class SetupRequiredApp extends StatelessWidget {
                       ?.copyWith(fontWeight: FontWeight.w700)),
               const SizedBox(height: 12),
               const Text(
-                'Aso Bhasha Shiki uses Firebase for sign-in and progress.\n\n'
+                'Esho Bhasha Shikhi uses Firebase for sign-in and progress.\n\n'
                 '1. Create a Firebase project and enable Email/Password sign-in.\n'
                 '2. Install the FlutterFire CLI:\n'
                 '   dart pub global activate flutterfire_cli\n'

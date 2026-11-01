@@ -58,6 +58,21 @@ class AnswerNormalizer {
     return false;
   }
 
+  /// Like [isMatch] for whole sentences: punctuation anywhere in the sentence
+  /// (commas, full stops, question marks) is ignored too.
+  static bool isLooseMatch({
+    required String input,
+    required String expected,
+    required String language,
+  }) {
+    final n = _dropPunctuation(normalize(input, language: language));
+    if (n.isEmpty) return false;
+    return n == _dropPunctuation(normalize(expected, language: language));
+  }
+
+  static String _dropPunctuation(String s) =>
+      s.replaceAll(RegExp(r'[.,!?;:"、。！？「」]'), '').replaceAll(RegExp(r' +'), ' ').trim();
+
   static String _toHalfWidthAscii(String s) => String.fromCharCodes(
         s.runes.map((r) => (r >= 0xFF01 && r <= 0xFF5E) ? r - 0xFEE0 : r),
       );

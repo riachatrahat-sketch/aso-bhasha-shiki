@@ -35,8 +35,15 @@ void main() {
   Future<double> total() async => (await backend.watchStats(uid).first).totalPoints;
 
   setUpAll(() {
-    final raw = File('assets/content/lessons.json').readAsStringSync();
-    catalog = LessonCatalog.fromJson(jsonDecode(raw) as Map<String, dynamic>);
+    final json = jsonDecode(File('assets/content/lessons.json').readAsStringSync())
+        as Map<String, dynamic>;
+    // These tests check scoring, unlocking and persistence. They use the classic
+    // plan (question N uses item N), so the per-question task plan is removed here.
+    // The task plan itself is tested in task_plan_test.dart.
+    for (final l in json['lessons'] as List) {
+      (l as Map<String, dynamic>).remove('tasks');
+    }
+    catalog = LessonCatalog.fromJson(json);
     lesson = catalog.lessonById('en_beginner_01')!;
   });
 

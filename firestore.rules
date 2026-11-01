@@ -1,6 +1,6 @@
 rules_version = '2';
 
-// LingoBridge AI security rules.
+// Esho Bhasha Shikhi security rules.
 //
 // Principle: the app (client) may read its OWN data and edit its OWN profile
 // fields. Everything that affects the score (lessonProgress, stats,
